@@ -1,0 +1,42 @@
+column,role,description,dtype
+customer_id,khóa,"Mã khách hàng (khóa kỹ thuật, không dùng làm đặc trưng)",str
+t0,khóa,"Thời điểm quyết định (thứ Hai, 2 tuần/lần)",datetime64[us]
+cutoff_ts,kiểm toán,t0 - độ trễ dữ liệu; mọi sự kiện dùng cho đặc trưng phải < cutoff,datetime64[us]
+max_feature_event_ts,kiểm toán,Sự kiện muộn nhất đã dùng để tính đặc trưng,datetime64[us]
+recency_days,đặc trưng,Số ngày từ đơn gần nhất đến t0,float64
+tenure_days,đặc trưng,Số ngày từ đơn đầu tiên đến t0,float64
+n_orders_all,đặc trưng,Số đơn hợp lệ trong toàn bộ lịch sử trước cutoff,int64
+value_all,đặc trưng,Tổng giá trị đơn (GBP) toàn lịch sử,float64
+n_orders_30,đặc trưng,Số đơn trong 30 ngày trước t0,int64
+n_orders_90,đặc trưng,Số đơn trong 90 ngày trước t0,int64
+n_orders_180,đặc trưng,Số đơn trong 180 ngày trước t0,int64
+n_orders_365,đặc trưng,Số đơn trong 365 ngày trước t0,int64
+value_30,đặc trưng,Tổng giá trị đơn trong 30 ngày trước t0,float64
+value_90,đặc trưng,Tổng giá trị đơn trong 90 ngày trước t0,float64
+value_180,đặc trưng,Tổng giá trị đơn trong 180 ngày trước t0,float64
+value_365,đặc trưng,Tổng giá trị đơn trong 365 ngày trước t0,float64
+aov_365,đặc trưng,Giá trị đơn trung bình 365 ngày,float64
+aov_all,đặc trưng,Giá trị đơn trung bình toàn lịch sử,float64
+units_per_order_365,đặc trưng,Số đơn vị hàng / đơn (đại diện khách sỉ),float64
+lines_per_order_365,đặc trưng,Số dòng hàng / đơn,float64
+distinct_products_365,đặc trưng,Số mã hàng khác nhau đã mua trong 365 ngày,int64
+ipt_mean_days,đặc trưng,Khoảng cách trung bình giữa hai đơn (NaN nếu mới mua 1 lần),float64
+ipt_std_days,đặc trưng,Độ lệch chuẩn khoảng cách giữa hai đơn,float64
+is_one_time,đặc trưng,1 nếu mới mua đúng 1 đơn,int8
+overdue_ratio,đặc trưng,recency / ipt_mean: >1 nghĩa là đã quá chu kỳ mua thường lệ,float64
+n_cancels_365,đặc trưng,Số hóa đơn hủy/trả trong 365 ngày (theo ngày hủy),int64
+cancel_value_365,đặc trưng,Giá trị hủy/trả trong 365 ngày,float64
+cancel_rate_365,đặc trưng,Tỷ lệ giá trị hủy / (bán + hủy) trong 365 ngày,float64
+days_since_last_cancel,đặc trưng,Số ngày từ lần hủy gần nhất (NaN nếu chưa từng hủy),float64
+value_trend_90_365,đặc trưng,Giá trị 90 ngày so với mức trung bình 90 ngày của năm,float64
+country,đặc trưng,Quốc gia của đơn gần nhất,str
+is_uk,đặc trưng,1 nếu khách ở Anh,int8
+t0_month,đặc trưng,Tháng của t0 (biết trước),int64
+days_to_xmas,đặc trưng,Số ngày từ t0 đến Giáng sinh kế tiếp (biết trước),int64
+y,nhãn,"1 nếu có >= 1 đơn hợp lệ trong [t0, t0 + H)",int8
+y_n_orders_h,nhãn,Số đơn trong cửa sổ nhãn,int64
+y_value_h,nhãn,Tổng giá trị đơn trong cửa sổ nhãn (dùng cho AOV/giá trị ở GĐ4–6),float64
+label_window_end,kiểm toán,t0 + H,datetime64[us]
+label_available_ts,kiểm toán,Thời điểm nhãn trưởng thành (độ trễ nhãn),datetime64[us]
+split,kiểm toán,train/valid/calib/locked/oot/embargo/excluded_entity_holdout,object
+is_entity_holdout,kiểm toán,1 nếu mã khách thuộc nhóm giữ riêng,int8

@@ -1,0 +1,16 @@
+mo_hinh,sieu_tham_so,MSE_valid,MSE_train,duoc_chon
+PTO tuyến tính (ridge),alpha=1,55359.869086600884,64964.96882217211,False
+PTO tuyến tính (ridge),alpha=10,53059.71792651897,64970.82656996923,False
+PTO tuyến tính (ridge),alpha=100,51054.93887257057,64993.18922319497,False
+PTO tuyến tính (ridge),alpha=1000,50425.18814205104,65027.48893023763,False
+PTO tuyến tính (ridge),alpha=10000,49174.55527500283,65166.14762863594,False
+PTO tuyến tính (ridge),alpha=100000,47791.95870614635,65435.52222519361,False
+PTO tuyến tính (ridge),alpha=300000,47617.22172171025,65555.1659210275,False
+PTO tuyến tính (ridge),alpha=1e+06,47596.3652949835,65641.29285499202,True
+PTO LightGBM,"num_leaves=4, n_estimators=200",47698.62187539769,63778.47280780451,False
+PTO LightGBM,"num_leaves=8, n_estimators=300",48137.1782042225,61740.59731386134,False
+PTO LightGBM,"num_leaves=16, n_estimators=300",48470.65906748129,59743.02857011233,False
+PTO LightGBM,"num_leaves=2, n_estimators=200",47594.59611393653,64824.34741151908,False
+PTO LightGBM,"num_leaves=4, n_estimators=20",47445.522209354356,65209.309999340745,True
+PTO LightGBM,"num_leaves=4, n_estimators=67",47462.43824426515,64638.57664130671,False
+Tham chiếu: V̂ GĐ4 (không huấn luyện lại),-,47535.866374672594,65746.80761463598,False

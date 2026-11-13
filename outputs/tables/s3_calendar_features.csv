@@ -1,0 +1,2 @@
+thang_train,thang_valid,thang_valid_chua_thay_o_train,ty_le_dong_valid_o_thang_chua_thay,days_to_xmas_train_min,days_to_xmas_train_max,days_to_xmas_valid_min,days_to_xmas_valid_max,shap_sd_lich_trong_valid,n_gia_tri_days_to_xmas_valid,pfi_nhom_lich,pfi_nhom_lich_ci_lo,pfi_nhom_lich_ci_hi,hang_pfi_nhom_lich,shap_abs_TB_lich,shap_TB_lich_co_dau,ty_le_shap_lich_tren_tong
+"[6, 7, 8, 9, 10, 11, 12]","[1, 2, 3]","[1, 2, 3]",1.0,5.0,201.0,286.0,328.0,0.03803655186956278,4,0.0,0.0,0.0,3,0.2646761206637688,0.2646761206637688,0.15352663054853163

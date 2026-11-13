@@ -1,0 +1,4 @@
+quan_the,nhan,G1,G2,G3,G4a,G4b,G5,G6,G7,G4
+Toàn bộ (chấm chính thức),THỬ (calib đóng vai locked),ĐẠT,TRƯỢT,TRƯỢT,ĐẠT,TRƯỢT,ĐẠT,ĐẠT,ĐẠT,TRƯỢT
+Khách thường (is_entity_holdout=0),THỬ (calib đóng vai locked),n/a,TRƯỢT,TRƯỢT,ĐẠT,TRƯỢT,n/a,n/a,ĐẠT,TRƯỢT
+"Entity-holdout (is_entity_holdout=1, mô tả)",THỬ (calib đóng vai locked),n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a

@@ -1,0 +1,114 @@
+{
+  "stage": "s3",
+  "created_utc": "2026-11-12T04:01:02+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s3_pfi_feature.csv",
+      "bytes": 3890,
+      "sha256": "f21195bc308a812527bb3f67c7a14c96c60aa9c22a969968a2a1c6836d72baaf"
+    },
+    {
+      "file": "outputs/tables/s3_pfi_group.csv",
+      "bytes": 449,
+      "sha256": "836da695ce6e4a629b5488d3fa4e8dfb5cab9f2c2314de389aa04a6dd82879f8"
+    },
+    {
+      "file": "outputs/figures/fig_s3_pfi.png",
+      "bytes": 114897,
+      "sha256": "19c75e9b30e78f56f76613e8421f4aee82860cacbc476305b05e2e7b619089da"
+    },
+    {
+      "file": "outputs/tables/s3_shap_importance.csv",
+      "bytes": 2716,
+      "sha256": "88598c417ed8fa1bc770b40a8db35622fe77e062844469e5db7e5203343022e3"
+    },
+    {
+      "file": "outputs/figures/fig_s3_shap_beeswarm.png",
+      "bytes": 200786,
+      "sha256": "fe2c9d7468c5c0d0b0d88ab255a28b55c1828beced83febd07b50c581de9cad7"
+    },
+    {
+      "file": "outputs/figures/fig_s3_shap_waterfall_1.png",
+      "bytes": 109362,
+      "sha256": "ed3796c7d388c9d7ce6305210cbabb222e0e3063d57de35a52da6805cff1d5c2"
+    },
+    {
+      "file": "outputs/figures/fig_s3_shap_waterfall_2.png",
+      "bytes": 111442,
+      "sha256": "bff9b6d947346a8205516e443502b2ae282b2b1d546ab7e978e3b86556515eab"
+    },
+    {
+      "file": "outputs/figures/fig_s3_shap_waterfall_3.png",
+      "bytes": 112486,
+      "sha256": "58f259ba66f145439e26ca2f4160cb96317aa7a04637a9568f685c39a7971dd7"
+    },
+    {
+      "file": "outputs/tables/s3_waterfall_customers.csv",
+      "bytes": 229,
+      "sha256": "31664484b1875a7d6abf3580e39d6c59962a698996e61332299cd4399a1bf180"
+    },
+    {
+      "file": "outputs/tables/s3_feature_business_labels.csv",
+      "bytes": 1773,
+      "sha256": "709e53108bcdd05a0707ffe721101bd9dcf0bb5dfc2a3c4a17a996f5e0808b8c"
+    },
+    {
+      "file": "data/processed/reasons_s3.parquet",
+      "bytes": 1528504,
+      "sha256": "28ee5ab5868585d8189b01111d4914506f385c8b9baefc77c8da50743b087a63"
+    },
+    {
+      "file": "outputs/tables/s3_reason_code_freq.csv",
+      "bytes": 792,
+      "sha256": "28788ce164aa416245b63eed4656eda86f0d94f428890ea3d492d45a15af4d1b"
+    },
+    {
+      "file": "outputs/tables/s3_shap_stability.csv",
+      "bytes": 700,
+      "sha256": "ff496603cd22b7e65bcc36b7e57d9698740610087531f38f3683f410e11e8565"
+    },
+    {
+      "file": "outputs/tables/s3_shap_stability_importance.csv",
+      "bytes": 4104,
+      "sha256": "87f2332bea69a1263983dc93061f528ee0e9c643429553a34cbeeccde8705060"
+    },
+    {
+      "file": "outputs/tables/s3_faithfulness_deletion.csv",
+      "bytes": 622,
+      "sha256": "f149c93054b177c2d82e277338aa0848978b3695c823c5fa833ad9dac0a0e284"
+    },
+    {
+      "file": "outputs/figures/fig_s3_faithfulness.png",
+      "bytes": 106879,
+      "sha256": "8c5e2531b04034b53db2fe85144e80235f7f92ed12b60cc80ee9af822e20ea94"
+    },
+    {
+      "file": "outputs/tables/s3_calendar_features.csv",
+      "bytes": 542,
+      "sha256": "37e84e979fa31219c3275f757b6f4077b71729fac1f91b50c8d02c9a13cab5cf"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "shap": "0.54.1",
+    "matplotlib": "3.11.2"
+  },
+  "extra": {
+    "stability": {
+      "spearman_TB_cac_cap": 0.8892,
+      "spearman_min": 0.7984,
+      "spearman_TB_so_voi_mo_hinh_goc": 0.9114,
+      "top5_chung_ca_6_mo_hinh": [
+        "n_orders_180",
+        "tenure_days"
+      ]
+    },
+    "base_logloss_valid": 0.43888230226105596
+  }
+}

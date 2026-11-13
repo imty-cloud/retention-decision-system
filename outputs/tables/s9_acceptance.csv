@@ -1,0 +1,7 @@
+muc,gia_tri
+"Learner thắng (Qini CV, train)",CausalForestDML
+Qini conversion/test: số email có CI hoàn toàn > 0,0/2
+Qini chi tiêu/test: số email có CI hoàn toàn > 0,0/2
+MILP hơn gửi ngẫu nhiên 30% (CI 95% hoàn toàn > 0)?,Không (CI chứa 0 hoặc < 0)
+MILP hơn không gửi (CI 95% hoàn toàn > 0)?,Không (CI chứa 0 hoặc < 0)
+Giới hạn,"Kiểm định phương pháp trên RCT thật, không phải toàn pipeline Online Retail"

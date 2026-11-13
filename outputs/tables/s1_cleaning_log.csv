@@ -1,0 +1,9 @@
+step,rule,rows_before,rows_after,rows_removed
+0_raw,Ghép 2 sheet,1067371,1067371,0
+1_sheet_overlap,Bỏ hóa đơn trùng giữa 2 sheet,1067371,1044848,22523
+2_exact_duplicates,Bỏ dòng trùng tuyệt đối,1044848,1033036,11812
+3_missing_customer,Bỏ dòng thiếu Customer ID (không gắn được đơn vị phân tích),1033036,797885,235151
+4_invoice_type,Chỉ giữ hóa đơn bán '\d{6}' và hủy 'C\d{6}' (bỏ 'A' điều chỉnh nợ),797885,797885,0
+5_non_product,"Bỏ mã không phải hàng hóa (POST, M, D, BANK CHARGES...)",797885,794223,3662
+6_price,Đơn giá > 0,794223,794163,60
+7_sign,Dấu số lượng khớp loại hóa đơn,794163,794163,0

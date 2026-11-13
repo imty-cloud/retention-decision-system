@@ -1,0 +1,2 @@
+file,bytes,sha256,so_dong,nguon
+data/raw/hillstrom/hillstorm_no_indices.csv.gz,443070,bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f,64000,sklift.datasets.fetch_hillstrom

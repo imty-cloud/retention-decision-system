@@ -1,0 +1,7 @@
+nhan,kich_ban,chinh_sach,gia_tri_hien_thuc,gia_tri_ky_vong,so_voucher,vi_pham_quy_dinh,gui_khach_opt_out_cap_huy,luot_bi_chan_cung,HITL_tu_choi_ha_cap,ton_that_tranh_duoc_hien_thuc,ton_that_tranh_duoc_ky_vong
+VẬN HÀNH (OOT thật),không trôi,KHÔNG guardrail: MILP thuần (miền v1),14587.192887011448,16342.979200736896,1242.0,5,5,0,0,0.0,0.0
+VẬN HÀNH (OOT thật),không trôi,"Đề xuất MILP (miền v2.1, trước Router)",5479.315716002082,9920.997316279892,1280.0,0,0,0,0,-9107.877171009366,-6421.981884457004
+VẬN HÀNH (OOT thật),không trôi,CÓ guardrail: MILP qua Router v2.1,6610.732670448213,11189.879573745753,776.0,0,0,0,448,-7976.460216563235,-5153.099626991143
+VẬN HÀNH (OOT thật),trôi (τ × 0.6),KHÔNG guardrail: MILP thuần (miền v1),7641.512444806855,3988.0874976489504,1242.0,5,5,0,0,0.0,0.0
+VẬN HÀNH (OOT thật),trôi (τ × 0.6),"Đề xuất MILP (miền v2.1, trước Router)",-729.9521310031382,337.0591676230898,1280.0,0,0,0,0,-8371.464575809992,-3651.0283300258607
+VẬN HÀNH (OOT thật),trôi (τ × 0.6),CÓ guardrail: MILP qua Router v2.1,1775.6395302085155,3807.7942768648536,776.0,0,0,0,448,-5865.872914598339,-180.29322078409677

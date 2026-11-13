@@ -1,0 +1,103 @@
+{
+  "stage": "s2",
+  "created_utc": "2026-11-12T03:56:36+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s2_ablation_calendar.csv",
+      "bytes": 2257,
+      "sha256": "7ea1322191181c0eda485c12ecd376d44c6738a9d622ec71380009b63c970c0b"
+    },
+    {
+      "file": "outputs/tables/s2_cv_grid.csv",
+      "bytes": 532,
+      "sha256": "bc23dfdd6c32da95d06293d243baf4856adcb5191ba40a1345715dd7e9ee1c78"
+    },
+    {
+      "file": "outputs/tables/s2_model_selection_valid.csv",
+      "bytes": 301,
+      "sha256": "1bdb0924929925c58894336b3be42fcb0b2297638dcbbb13d25c4142f980d758"
+    },
+    {
+      "file": "outputs/tables/s2_calibration_cv_calib.csv",
+      "bytes": 353,
+      "sha256": "d2b6d219fb8d114d1f97ebd16bfa07f06233a14d4e2116fbb5c30c93bd9da4b0"
+    },
+    {
+      "file": "outputs/tables/s2_metrics_valid.csv",
+      "bytes": 3870,
+      "sha256": "e5cf41a67f26ac070f7744e3106c680d54fca64f1a567103dca0c2efa3cad948"
+    },
+    {
+      "file": "outputs/figures/fig_s2_reliability_valid.png",
+      "bytes": 113447,
+      "sha256": "6e62bcf0128d6d9335d06ff206b4a7ea854d25bc0a4960c1f9394d493559a5aa"
+    },
+    {
+      "file": "outputs/tables/s2_basket_cv_grid.csv",
+      "bytes": 190,
+      "sha256": "762d4bcad516f50640a8b23c7329f26ac0146e64b709cf141699f2db6960dcce"
+    },
+    {
+      "file": "outputs/tables/s2_basket_conformal_valid.csv",
+      "bytes": 418,
+      "sha256": "3758658e26362be7d163de02e17fe8bf94b99ab9f1f24d19f493277b5de700df"
+    },
+    {
+      "file": "outputs/figures/fig_s2_basket_conformal.png",
+      "bytes": 139336,
+      "sha256": "fddcfe1c39cc11ad923f10220c49a0a6b20cc598de5a7745d59dfc3bcccb2fb6"
+    },
+    {
+      "file": "data/processed/pred_s2.parquet",
+      "bytes": 8694750,
+      "sha256": "be4095a16b9ea5236c5d52281c18900d81f0fb5d1b0ef8e258082106d200461e"
+    },
+    {
+      "file": "models/s2_mu0_model.joblib",
+      "bytes": 244744,
+      "sha256": "2d657ac073c694a4a3660bed97671a05a38ebc7f322a5f245adc0ce47937a9ba"
+    },
+    {
+      "file": "models/s2_mu0_candidates.joblib",
+      "bytes": 250418,
+      "sha256": "352b40c719b4d139a88f6a4c0bcd0ccccbd4785d160d528f768e19550205de99"
+    },
+    {
+      "file": "models/s2_calibrator.joblib",
+      "bytes": 2737,
+      "sha256": "b72282a6965f5a6336bd7518436f3f328214747e381286f90ff887cf1b9a10ae"
+    },
+    {
+      "file": "models/s2_basket_model.joblib",
+      "bytes": 359354,
+      "sha256": "8120cbecb268d63a4aa65264dd1cc014ed90bc91a31171599789d4358dc3f49f"
+    },
+    {
+      "file": "outputs/tables/s2_acceptance.csv",
+      "bytes": 217,
+      "sha256": "8953a4b52a84c822db84f50fef418c9b4a432eeec2717c307634f79b4708089b"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "extra": {
+    "mu0_model": "lgbm",
+    "calibrator": "platt",
+    "basket_hp": [
+      8,
+      400
+    ],
+    "conformal_q_log": 0.9028838202418878,
+    "features_calendar_choice": "day_du",
+    "smearing_duan": 1.049244659269135
+  }
+}

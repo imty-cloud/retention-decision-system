@@ -1,0 +1,4 @@
+quan_the,nhan,G1,G2,G3,G4a,G4b,G5,G6,G7,G4
+Toàn bộ (chấm chính thức),"CHÍNH THỨC (locked, mở 1 lần)",n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+Khách thường (is_entity_holdout=0),"CHÍNH THỨC (locked, mở 1 lần)",n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+"Entity-holdout (is_entity_holdout=1, mô tả)","CHÍNH THỨC (locked, mở 1 lần)",n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a

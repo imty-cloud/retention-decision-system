@@ -1,0 +1,49 @@
+tap,learner,hanh_dong,n,n_dieu_tri,qini,auuc,qini_ci_lo,qini_ci_hi,duoc_chon,ghi_chu
+valid,T-learner,a1,1416,708,0.055272349442061885,0.03663780275995605,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,T-learner,a2,1420,712,0.011462761687930341,0.011564798898813884,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,T-learner,a3,1445,737,0.05723543098310877,0.04301469789798354,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+calib,T-learner,a1,1125,568,-0.030826947271585414,-0.01943020224823001,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,T-learner,a2,1125,568,-0.04984017927259447,-0.0396386944324547,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,T-learner,a3,1100,543,-0.015484576166975612,-0.013729521337002918,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+valid+calib,T-learner,a1,2541,1276,0.018606289023693347,0.01300960270991671,-0.03438708380444987,0.073837083158044,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,T-learner,a2,2545,1280,-0.01728494574718046,-0.011755852470544744,-0.06171559839903351,0.036793075902411626,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,T-learner,a3,2545,1280,0.026828556754113178,0.019270670817816044,-0.02845440569739715,0.08562730247961593,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+train (ngoài fold),T-learner,a1,4416,2226,0.04512432325070742,0.03975039268475412,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),T-learner,a2,4378,2188,0.054129264187853125,0.05158628790440133,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),T-learner,a3,4299,2109,0.043835270041620085,0.03993287215366547,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+valid,X-learner,a1,1416,708,0.0492837384976526,0.03190701340125916,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,X-learner,a2,1420,712,0.018984396898109598,0.018892641366843144,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,X-learner,a3,1445,737,0.0523638343898279,0.03952559035209579,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+calib,X-learner,a1,1125,568,-0.017236987316314047,-0.011575784134666,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,X-learner,a2,1125,568,-0.008666094630739918,-0.006513384479370328,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,X-learner,a3,1100,543,0.026628833768856174,0.014621248238233178,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+valid+calib,X-learner,a1,2541,1276,0.022419758941970243,0.014362510091289908,-0.030514207949149677,0.08467849088440663,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,X-learner,a2,2545,1280,0.006360511460154359,0.00784853553167906,-0.04051128672551318,0.05932268325195232,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,X-learner,a3,2545,1280,0.04129737656770062,0.028960072646152118,-0.01152420679790016,0.09748187404588433,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+train (ngoài fold),X-learner,a1,4416,2226,0.03906010405322086,0.03497536023094261,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),X-learner,a2,4378,2188,0.05974488514443919,0.05670481780536593,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),X-learner,a3,4299,2109,0.05443610568025526,0.04952954810365242,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+valid,DR-learner,a1,1416,708,0.00830471443132541,0.0060124136909663825,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,DR-learner,a2,1420,712,0.02908032096023507,0.025347780803097898,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,DR-learner,a3,1445,737,0.07106356046830696,0.052936408681262294,,,False,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+calib,DR-learner,a1,1125,568,0.008090645123862436,0.006431994398220254,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,DR-learner,a2,1125,568,0.01516003285990101,0.014210248658737117,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,DR-learner,a3,1100,543,0.0035074760509526113,0.0009754326951108534,,,False,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+valid+calib,DR-learner,a1,2541,1276,0.01054836300566539,0.007530515490989862,-0.037743873809187874,0.06269255148162017,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,DR-learner,a2,2545,1280,0.021015064994301898,0.01905875614158819,-0.03046285043165344,0.07703324252822762,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,DR-learner,a3,2545,1280,0.040990868735635046,0.029805308059104103,-0.01176510259845401,0.10037955621734616,False,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+train (ngoài fold),DR-learner,a1,4416,2226,0.026143729914758558,0.023320000879852493,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),DR-learner,a2,4378,2188,0.058706589370266175,0.05503836427091212,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),DR-learner,a3,4299,2109,0.05759102117744098,0.05250951139637708,,,False,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+valid,CausalForestDML,a1,1416,708,0.06430666164351437,0.0436076258338906,,,True,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,CausalForestDML,a2,1420,712,0.053883159695385784,0.04379493235120669,,,True,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+valid,CausalForestDML,a3,1445,737,0.04705503501165576,0.037009026347743564,,,True,Tập dùng để CHỌN learner → lạc quan (thiên lệch chọn mô hình) cho learner được chọn
+calib,CausalForestDML,a1,1125,568,0.06813884012144486,0.04397989713787949,,,True,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,CausalForestDML,a2,1125,568,0.00414197554354895,0.005234126804370554,,,True,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+calib,CausalForestDML,a3,1100,543,0.02065476415209262,0.011663061628341805,,,True,KHÔNG dùng để chọn learner → ước lượng KHÔNG bị thiên lệch do chọn mô hình (nên dùng để dự báo locked)
+valid+calib,CausalForestDML,a1,2541,1276,0.06534821953128724,0.04347962927024789,0.00818170954325581,0.1164480482662995,True,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,CausalForestDML,a2,2545,1280,0.029623187476489163,0.025612423409747787,-0.025593192371298732,0.08855867116534961,True,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+valid+calib,CausalForestDML,a3,2545,1280,0.03523257066355126,0.025847564160535595,-0.019109068185035553,0.09606864450997768,True,Gộp theo đặc tả; chứa phần valid đã dùng để chọn → hơi lạc quan
+train (ngoài fold),CausalForestDML,a1,4416,2226,0.03518059033007695,0.031606655909992856,,,True,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),CausalForestDML,a2,4378,2188,0.06876079170175407,0.06482883827068633,,,True,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo
+train (ngoài fold),CausalForestDML,a3,4299,2109,0.05614134996632579,0.05104275627308222,,,True,Ngoài fold trên train (cùng giai đoạn với dữ liệu học) – chỉ để tham khảo

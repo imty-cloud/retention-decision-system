@@ -1,0 +1,39 @@
+con_so,gia_tri,file_nguon
+kiểm thử rò rỉ đạt,15/15,s1_leakage_tests.csv
+embargo nhỏ nhất (ngày),42,s1_embargo_check.csv
+train: dòng / kỳ,"43,921 / 15",s1_split_summary.csv
+valid: dòng / kỳ,"14,346 / 4",s1_split_summary.csv
+calib: dòng / kỳ,"10,981 / 3",s1_split_summary.csv
+locked: dòng / kỳ,"12,947 / 3",s1_split_summary.csv
+oot: dòng / kỳ,"21,693 / 5",s1_split_summary.csv
+locked: dòng khách thường / entity-holdout,"10,942 / 2,005",s1_split_summary.csv
+ECE thô,0.139,s2_metrics_valid.csv
+ECE Platt,0.047,s2_metrics_valid.csv
+ROC-AUC,0.786,s2_metrics_valid.csv
+PFI RFM,0.141,s3_pfi_group.csv
+Spearman SHAP,0.89,s3_shap_stability.csv
+Qini a1,0.065,s4_qini.csv
+regret SPO+,1.036,s5_regret_summary.csv
+regret PTO,0.999,s5_regret_summary.csv
+MILP 50k (s),14.3,s6_scaling.csv
+chi thực/kế hoạch (μ̂0 thô),0.65,s6_calibration_discount_cost_summary.csv
+chi thực/kế hoạch (μ̂0 Platt),0.90,s6_calibration_discount_cost_summary.csv
+MILP qua Router,"£21,483",s7_policy_value_summary_v21.csv
+luật cũ qua Router,"£15,039",s7_policy_value_summary_v21.csv
+gate đạt,7,s8_locked_gate_summary_corrected.csv
+G2 ECE,0.0201,s8_locked_g2_calibration.csv
+G1,7/7,s8_locked_g1_contract.csv
+G3,2/3,s8_locked_g3_qini.csv
+G4a chênh,£961,s8_locked_g4a_comparison.csv
+G4a ngưỡng,£782,s8_locked_g4a_comparison.csv
+G4b,0.894,s8_locked_g4_policy_value.csv
+G5 vi phạm,0,s8_locked_g5_constraint_audit.csv
+G6 P95,1.05,s8_locked_g6_latency_percentiles.csv
+G7 UK,+18.8,s8_locked_g7_segments.csv
+G7 non-UK,+4.7,s8_locked_g7_segments.csv
+regret đáp án B (lô 100),0.74,s5_regret_summary.csv
+ECE kỳ đầu,0.032,s8_oot_calibration_matured.csv
+ECE kỳ cuối,0.086,s8_oot_calibration_matured.csv
+vi phạm không guardrail,5,s8_oot_drift_guardrail.csv
+vi phạm có guardrail,0,s8_oot_drift_guardrail.csv
+mất giá trị,"£7,976",s8_oot_drift_guardrail.csv

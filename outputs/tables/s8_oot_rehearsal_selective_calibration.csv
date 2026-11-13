@@ -1,0 +1,7 @@
+nhan,phuong_phap,nhom,n,p_du_bao_TB,Y0_that_TB,do_chech,ece_vs_Y0_that,brier_vs_Y0_that
+"THỬ (valid = tham chiếu, calib đóng vai OOT)","Current (Platt GĐ2, không học lại)",nhóm được chọn (tập ngẫu nhiên),583,0.13302250424735104,0.10634648370497427,0.026676020542376777,0.04219345077989525,0.09223754194677393
+"THỬ (valid = tham chiếu, calib đóng vai OOT)","Current (Platt GĐ2, không học lại)",toàn bộ,10981,0.21121008972346864,0.20307804389399872,0.008132045829469914,0.023691325579193925,0.12426104100708252
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",Challenger KHÔNG đối chứng (chỉ a0 không được chọn),nhóm được chọn (tập ngẫu nhiên),583,0.12330741082682044,0.10634648370497427,0.016960927121846173,0.03846726020080059,0.0918290055833321
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",Challenger KHÔNG đối chứng (chỉ a0 không được chọn),toàn bộ,10981,0.20397180231511966,0.20307804389399872,0.0008937584211209382,0.019169567658288113,0.12404469631218888
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",Challenger CÓ đối chứng + IPW (đối chứng × 1/0.1),nhóm được chọn (tập ngẫu nhiên),583,0.1212295862426822,0.10634648370497427,0.014883102537707929,0.037396599053117256,0.09172268434931415
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",Challenger CÓ đối chứng + IPW (đối chứng × 1/0.1),toàn bộ,10981,0.2010118928465617,0.20307804389399872,-0.002066151047437015,0.01892036928277612,0.1240393491283601

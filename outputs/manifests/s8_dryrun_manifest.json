@@ -1,0 +1,116 @@
+{
+  "stage": "s8_dryrun",
+  "created_utc": "2026-11-12T14:30:00+00:00",
+  "files": [
+    {
+      "file": "data/processed/decisions_s8_dryrun.parquet",
+      "bytes": 909574,
+      "sha256": "fe188a7819b44185af9e3bd1f65ecf0e21d5a038162e97ad3d5a07c2c272278d"
+    },
+    {
+      "file": "data/processed/decisions_s8_dryrun_legacy.parquet",
+      "bytes": 909395,
+      "sha256": "920b852d1761e800719ab9bd625f6bae814c34a3e266f6cf27570a0b110c4f48"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_gates.csv",
+      "bytes": 10990,
+      "sha256": "042787c231a9816ac2f45d9f23582267f82e64aa20a471fd86f4816c8683fbfd"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_gate_summary.csv",
+      "bytes": 430,
+      "sha256": "c8c2f4e27a3e40f5882631ccb58a44d10f2cf7b5be943a0b5edac043d119bbff"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g1_contract.csv",
+      "bytes": 724,
+      "sha256": "befeec6bd3b4cd8a6f240409ccf1748af62af8ea9fc4e99407dc9856a36bee34"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g2_calibration.csv",
+      "bytes": 632,
+      "sha256": "7bd60fb0784b14c89726869c13d5fb0210a40d8b19df8f45373739d80b9425c1"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g3_qini.csv",
+      "bytes": 1016,
+      "sha256": "8f3cd5452a88f708807506387e72c1beafc41620be0cbccc27a0307f1e07394c"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g4_policy_value.csv",
+      "bytes": 1623,
+      "sha256": "867b4b60dccab92c0035bcd9d67a522313fd3bc76a7d492b4c8b4a0da4d535dc"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g4a_comparison.csv",
+      "bytes": 955,
+      "sha256": "2cf66459a0c7b6b6602eaab87185e870084f2c3168e26b44cff34470d5b27cb8"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g5_constraint_audit.csv",
+      "bytes": 881,
+      "sha256": "ebaab0ae7d3fb47cd7ef58e28a80ae6cef1c1f2a275f0f8fbbdd2b4fc3d11c9a"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g6_latency_runs.csv",
+      "bytes": 14309,
+      "sha256": "8ba5a098fe600226500455717abfdfae52bc162adbaa440534f9494759adbc82"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g6_latency_percentiles.csv",
+      "bytes": 650,
+      "sha256": "6ba2063745d803f9f4ad998534f785bc06ea3f9978848ac5141f06c31561180c"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_g7_segments.csv",
+      "bytes": 1257,
+      "sha256": "4dd86c301321757f3a9ab7f8ab221e440ca8f391d8a3c88eabc54b9dd56cdbc0"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_policy_value_by_period.csv",
+      "bytes": 1514,
+      "sha256": "a626bfccd48bd409a29e1e3cc3fe86fd15f05601c3f25fd0e134ab5d918f7bfc"
+    },
+    {
+      "file": "outputs/tables/s8_dryrun_consistency.csv",
+      "bytes": 606,
+      "sha256": "5c1ad7e6c46b5995e712cb9f6b08ecc8def39165661b17b3f30eb2203fe2230a"
+    },
+    {
+      "file": "outputs/figures/fig_s8_dryrun_gates.png",
+      "bytes": 198276,
+      "sha256": "d01341a748f28d1e9e08b84dbc979be042871d9e4961b371b0986cbbf76e2e1a"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "doubleml": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "shap": "0.54.1",
+    "highspy": "1.16.0",
+    "pulp": "4.2.0",
+    "torch": "2.15.0",
+    "pyepo": "2.2.7",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "mode": "dry-run",
+    "split_dong_vai_locked": "calib",
+    "nhan": "THỬ (calib đóng vai locked)",
+    "model_version": "mu0:2d657ac0|cal:b72282a6|S:8120cbec|cate:cd332637",
+    "policy_version": "router-v2.1",
+    "n_lat_moi_ky": 30,
+    "runtime_s": 139
+  }
+}

@@ -1,0 +1,13 @@
+quan_the,so_sanh,phan_khuc,n_dong,chinh_sach,doi_chung,chenh_tuong_doi,dat
+toan_bo,CHÍNH: vs Luật cũ qua Router v2.1,UK,10096,7101.759082865763,4581.414552297307,0.5501236576167624,True
+toan_bo,CHÍNH: vs Luật cũ qua Router v2.1,non-UK,885,5193.820991334581,4776.463263847016,0.08737798333895709,True
+toan_bo,PHỤ: vs Luật cũ thuần,UK,10096,7101.759082865763,-1471.6682679833966,5.82565211017099,True
+toan_bo,PHỤ: vs Luật cũ thuần,non-UK,885,5193.820991334581,5560.705341451638,-0.06597802393558955,False
+khach_thuong,CHÍNH: vs Luật cũ qua Router v2.1,UK,10096,7101.759082865763,4581.414552297307,0.5501236576167624,True
+khach_thuong,CHÍNH: vs Luật cũ qua Router v2.1,non-UK,885,5193.820991334581,4776.463263847016,0.08737798333895709,True
+khach_thuong,PHỤ: vs Luật cũ thuần,UK,10096,7101.759082865763,-1471.6682679833966,5.82565211017099,True
+khach_thuong,PHỤ: vs Luật cũ thuần,non-UK,885,5193.820991334581,5560.705341451638,-0.06597802393558955,False
+entity_holdout,CHÍNH: vs Luật cũ qua Router v2.1,UK,0,0.0,0.0,,
+entity_holdout,CHÍNH: vs Luật cũ qua Router v2.1,non-UK,0,0.0,0.0,,
+entity_holdout,PHỤ: vs Luật cũ thuần,UK,0,0.0,0.0,,
+entity_holdout,PHỤ: vs Luật cũ thuần,non-UK,0,0.0,0.0,,

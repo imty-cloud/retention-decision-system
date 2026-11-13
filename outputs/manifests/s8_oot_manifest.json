@@ -1,0 +1,110 @@
+{
+  "stage": "s8_oot",
+  "created_utc": "2026-11-12T14:45:17+00:00",
+  "files": [
+    {
+      "file": "data/processed/decisions_s8_oot.parquet",
+      "bytes": 1782231,
+      "sha256": "7f16dd4ab4f401379d9665ea57f5c5e92254f30f16f22f0568ce67e6923bfb84"
+    },
+    {
+      "file": "outputs/tables/s8_oot_latency.csv",
+      "bytes": 4667,
+      "sha256": "cd8b49672b17b0245821f82b839d1cc2fcadb6afdc2b1d7460fbbe10475f8dc1"
+    },
+    {
+      "file": "outputs/tables/s8_oot_psi.csv",
+      "bytes": 22957,
+      "sha256": "b3a2293b2d7d205f81fbcfc3763e90474de026914c1d861d09ecada623e6a036"
+    },
+    {
+      "file": "outputs/tables/s8_oot_action_tvd.csv",
+      "bytes": 1268,
+      "sha256": "d1c1f2a3cc65b4e39791e10fda86f9ca84f1d63121459a5a1afa14cf3798f611"
+    },
+    {
+      "file": "outputs/tables/s8_oot_calibration_matured.csv",
+      "bytes": 3021,
+      "sha256": "6d534c679ee740dd046eb736b3cb29761d7a25dc416e533d10a68f468bfbe5fb"
+    },
+    {
+      "file": "outputs/tables/s8_oot_label_delay_by_date.csv",
+      "bytes": 522,
+      "sha256": "7f653e7e091d7100768877a4dd378d365ebfaa199f270262b885b2d2706531ac"
+    },
+    {
+      "file": "outputs/tables/s8_oot_label_delay_by_metric.csv",
+      "bytes": 1106,
+      "sha256": "4b41ace2a9d7ffae99b49149898828ff941a35074c5ac57f1e8719f30b0c8b45"
+    },
+    {
+      "file": "outputs/tables/s8_oot_dr_value.csv",
+      "bytes": 1288,
+      "sha256": "b5e674cf99a3f486e761f0e98f87299153a1c661f7224214eaa218e7a213b2fa"
+    },
+    {
+      "file": "outputs/tables/s8_oot_selective_effect.csv",
+      "bytes": 583,
+      "sha256": "aa07b6ed5166f4e074b171e4be4ecdb158d59bc55d1d48b351bc3274cb5fb559"
+    },
+    {
+      "file": "outputs/tables/s8_oot_selective_calibration.csv",
+      "bytes": 1388,
+      "sha256": "01cd759b621852990a7baf2ab30c11426e269d8486efcaabb2de9c61d6c202af"
+    },
+    {
+      "file": "outputs/tables/s8_oot_drift_guardrail.csv",
+      "bytes": 1197,
+      "sha256": "ca387e9c41586611a442e41c8ab1736e3463b26c3d943091428b6e01aad8eb96"
+    },
+    {
+      "file": "outputs/tables/s8_oot_playbook.csv",
+      "bytes": 2846,
+      "sha256": "e4ecd9b352d7d6ba53f0d8810a1c0e892947c2a35b7865637306b8cd8d256fea"
+    },
+    {
+      "file": "outputs/figures/fig_s8_oot.png",
+      "bytes": 229432,
+      "sha256": "86ce9add4484b1c7590d015336b3a552632f62c75ec1946143a7daddf2cc3e06"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "doubleml": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "shap": "0.54.1",
+    "highspy": "1.16.0",
+    "pulp": "4.2.0",
+    "torch": "2.15.0",
+    "pyepo": "2.2.7",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "mode": "real",
+    "nhan": "VẬN HÀNH (OOT thật)",
+    "oot_vai": "oot",
+    "tham_chieu": [
+      "valid",
+      "calib"
+    ],
+    "kho_nhan": [
+      "calib",
+      "locked",
+      "oot"
+    ],
+    "model_version": "mu0:2d657ac0|cal:b72282a6|S:8120cbec|cate:cd332637",
+    "n_lat": 30,
+    "n_boot": 1000,
+    "runtime_s": 192
+  }
+}

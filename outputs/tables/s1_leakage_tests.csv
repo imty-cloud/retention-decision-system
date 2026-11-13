@@ -1,0 +1,16 @@
+test,t0,pass,detail
+T1_point_in_time_rebuild,2011-01-17,True,4221 khách; đặc trưng dựng lại từ dữ liệu cắt tại cutoff
+T2_future_perturbation_invariance,2011-01-17,True,Giá trị/số lượng sau cutoff x10 không làm đổi đặc trưng
+T3_label_recompute,2011-01-17,True,base rate=0.160
+T1_point_in_time_rebuild,2010-07-19,True,3046 khách; đặc trưng dựng lại từ dữ liệu cắt tại cutoff
+T2_future_perturbation_invariance,2010-07-19,True,Giá trị/số lượng sau cutoff x10 không làm đổi đặc trưng
+T3_label_recompute,2010-07-19,True,base rate=0.242
+T1_point_in_time_rebuild,2011-05-09,True,4322 khách; đặc trưng dựng lại từ dữ liệu cắt tại cutoff
+T2_future_perturbation_invariance,2011-05-09,True,Giá trị/số lượng sau cutoff x10 không làm đổi đặc trưng
+T3_label_recompute,2011-05-09,True,base rate=0.210
+T1_point_in_time_rebuild,2011-06-20,True,4310 khách; đặc trưng dựng lại từ dữ liệu cắt tại cutoff
+T2_future_perturbation_invariance,2011-06-20,True,Giá trị/số lượng sau cutoff x10 không làm đổi đặc trưng
+T3_label_recompute,2011-06-20,True,base rate=0.188
+T4_embargo_gap>=H,,True,train->valid: 42d; valid->calib: 42d; calib->locked: 42d; locked->oot: 42d
+T5_entity_holdout_isolation,,True,878 khách giữ riêng
+T6_exclusion_list,,True,Nhãn/khóa/cột kiểm toán không nằm trong danh sách đặc trưng

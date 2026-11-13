@@ -1,0 +1,2 @@
+gia_tri_mo_hinh_milp,gia_tri_mo_hinh_greedy,tuong_duong,n_gui_milp,n_gui_greedy,tran_gui,trang_thai,thoi_gian_milp_s,chu_thich
+1649.6481396315276,1649.6481396315276,True,5760,5760,5760,Optimal,5.0810164579997945,Chỉ có ràng buộc lực lượng (ma trận unimodular) nên MILP và Greedy trùng nghiệm; khác biệt chỉ xuất hiện khi có thêm ràng buộc ngân sách/năng lực như GĐ5–6.

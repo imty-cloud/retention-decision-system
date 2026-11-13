@@ -1,0 +1,409 @@
+{
+  "stage": "s8_freeze_draft",
+  "created_utc": "2026-11-12T14:07:50+00:00",
+  "scope": [
+    "src/*.py",
+    "configs/**",
+    "models/**",
+    "CLAUDE.md"
+  ],
+  "files": [
+    {
+      "file": "src/common.py",
+      "bytes": 2336,
+      "sha256": "72ab78c45744f7ed325fcba9b53e3532b6d0ee66477cc18a2d2bb84d2bac8f9e"
+    },
+    {
+      "file": "src/s1_data.py",
+      "bytes": 29553,
+      "sha256": "aae640ca989e70b1ba393d29c7aaad9834bd8d6614591abd3cc5935407efff4b"
+    },
+    {
+      "file": "src/s1b_intervention.py",
+      "bytes": 10006,
+      "sha256": "9412d7229e7bf6ad731b2459bdba52773c31179dbebb07a898a6c78743a1e791"
+    },
+    {
+      "file": "src/s2_predict.py",
+      "bytes": 21657,
+      "sha256": "a55f65b2eccd4e6349e1993c157fa3a0987d657082b5692c06fac1e0ff115cde"
+    },
+    {
+      "file": "src/s3_explain.py",
+      "bytes": 20389,
+      "sha256": "01e889f4d614fc35cdb5981def28424a63b7d88f0e19ad47ae695dde4c2fafbe"
+    },
+    {
+      "file": "src/s4_causal.py",
+      "bytes": 40382,
+      "sha256": "52c7501f68435fa796d4041a7c10a8ff1170b835207e1a442bad4bb9a46af83e"
+    },
+    {
+      "file": "src/s4b_power_g3.py",
+      "bytes": 7110,
+      "sha256": "ebac7d160b753898a822f14926d001b082d4676900abde6af23e59fad1657853"
+    },
+    {
+      "file": "src/s5_spo.py",
+      "bytes": 51273,
+      "sha256": "1ec95b7b6c1f67b264ec27c02782107e46576ee9880fc299f1e713acbf01410a"
+    },
+    {
+      "file": "src/s5b_dr_diagnostics.py",
+      "bytes": 24178,
+      "sha256": "6a66dab70eb46387e3f7d78f26c48ffcc303dd6121edabd73b3f090f35b0a016"
+    },
+    {
+      "file": "src/s6_milp.py",
+      "bytes": 38194,
+      "sha256": "a8567d3106f5c4e5fee4c6b51a6560d0a80e48f047e46750963ae42f81406577"
+    },
+    {
+      "file": "src/s7_router.py",
+      "bytes": 97398,
+      "sha256": "9758449e6423f0942acb01def79d0907f30dc38b78be318bacd313946946a9ff"
+    },
+    {
+      "file": "src/s8_mlops.py",
+      "bytes": 51124,
+      "sha256": "2cdd14d5e7a7dde30f18f8924559942d7bf8c99820c9bb3041c867da20bd73d0"
+    },
+    {
+      "file": "src/s9_external_hillstrom.py",
+      "bytes": 40160,
+      "sha256": "aa3d2e13b01ff260392c69eb35f7d1611a67dadcecfe7eb1c68255abc920cf0e"
+    },
+    {
+      "file": "configs/config.yaml",
+      "bytes": 6364,
+      "sha256": "c2241f24340fd18b102f9d885342f3abe3daf4f0737b39862155c40b9dd50988"
+    },
+    {
+      "file": "models/s2_basket_model.joblib",
+      "bytes": 359354,
+      "sha256": "8120cbecb268d63a4aa65264dd1cc014ed90bc91a31171599789d4358dc3f49f"
+    },
+    {
+      "file": "models/s2_calibrator.joblib",
+      "bytes": 2737,
+      "sha256": "b72282a6965f5a6336bd7518436f3f328214747e381286f90ff887cf1b9a10ae"
+    },
+    {
+      "file": "models/s2_mu0_candidates.joblib",
+      "bytes": 250418,
+      "sha256": "352b40c719b4d139a88f6a4c0bcd0ccccbd4785d160d528f768e19550205de99"
+    },
+    {
+      "file": "models/s2_mu0_model.joblib",
+      "bytes": 244744,
+      "sha256": "2d657ac073c694a4a3660bed97671a05a38ebc7f322a5f245adc0ce47937a9ba"
+    },
+    {
+      "file": "models/s4_cate_bundle.joblib",
+      "bytes": 42817427,
+      "sha256": "cd332637802b8981210a03b602b3647b5863ecb2091dc7d986c210c29e1d79e3"
+    },
+    {
+      "file": "models/s4_propensity.joblib",
+      "bytes": 1228686,
+      "sha256": "3ee0c20937a54d327c030d42ed2e21b334d6a54ad16a87ad70920a45a65bbfef"
+    },
+    {
+      "file": "models/s5_pto_lgbm.joblib",
+      "bytes": 332042,
+      "sha256": "68fc2174daa99f8f1109881b82fe399e15c6efd6f005b4d99208bc59faad0740"
+    },
+    {
+      "file": "models/s5_pto_lgbm_mo_rong.joblib",
+      "bytes": 49633,
+      "sha256": "db91ec1d5cffbe40b37be3f57138e417b64686345995fdffc2859da0cd0c3a5a"
+    },
+    {
+      "file": "models/s5_pto_linear.joblib",
+      "bytes": 3162,
+      "sha256": "9bf9fc0ff879803ee7b8171f40032128f4ef6b74e164d78c98134dfdd2eacd52"
+    },
+    {
+      "file": "models/s5_pto_linear_mo_rong.joblib",
+      "bytes": 3162,
+      "sha256": "03c648360cabb3e3f5f5ad602a90ed546ed5eec324ba6cb31cc1e3023fd36f15"
+    },
+    {
+      "file": "models/s5_spo_linear.joblib",
+      "bytes": 8379,
+      "sha256": "8cb38ecf70ce316271c3d8e09deef7ffed335dcdf84853ba985ca1aae40de43d"
+    },
+    {
+      "file": "models/s5_spo_linear_mo_rong.joblib",
+      "bytes": 8379,
+      "sha256": "ea8bb05155775a030fc7827113da869520c03df3f8ccb57efd87d4fcaf0fb4ae"
+    },
+    {
+      "file": "CLAUDE.md",
+      "bytes": 28766,
+      "sha256": "712e09dfcd5143c09293d3a2bf94e778774d93943498c4dfb151d65008dc2b2c"
+    }
+  ],
+  "aggregate_sha256": "72334d8f32217518680466f45b8ac0432e281c038bf3d880ca7b08860213e129",
+  "data_scope": "data/processed/*.parquet (trừ decisions_s8_*; băm theo byte, không parse)",
+  "data_files": [
+    {
+      "file": "data/processed/cancels.parquet",
+      "bytes": 150068,
+      "sha256": "4a92e1026ceb3532cc7fb3c39babf59765ed6eb1c5c968cc16021c01120f1ad3"
+    },
+    {
+      "file": "data/processed/decisions_s7.parquet",
+      "bytes": 2002238,
+      "sha256": "402800e73eedca11946e61e5da7df7f6ce0ae47077439b57a6fa209601a902cb"
+    },
+    {
+      "file": "data/processed/decisions_s7_v2.parquet",
+      "bytes": 2067080,
+      "sha256": "eb0155afed5dd34bf4e3d56e8388a57d2934d6bd5a239200a91c5c582a106ea7"
+    },
+    {
+      "file": "data/processed/decisions_s7_v21.parquet",
+      "bytes": 2066931,
+      "sha256": "b0c66d8a80ec69e64c186d993b1f9ffb2662d87816798a54ce8685cbcb44c763"
+    },
+    {
+      "file": "data/processed/decisions_s7_v21_legacy.parquet",
+      "bytes": 2068455,
+      "sha256": "279eed5ca0e4f730f64a03dbe941e4fe6f6a11f4a4f43341b61a65d202b414b3"
+    },
+    {
+      "file": "data/processed/decisions_s7_v2_legacy.parquet",
+      "bytes": 2066189,
+      "sha256": "feea758a4c39c3645641d614ef31c8382d9f03b0e8083d9d5752976a2c41111d"
+    },
+    {
+      "file": "data/processed/logged.parquet",
+      "bytes": 17900129,
+      "sha256": "778f5c88ca2e4537b1e30a0b9579043decc4120fc4fc354eb0de347eda7cb8e8"
+    },
+    {
+      "file": "data/processed/oracle.parquet",
+      "bytes": 8469157,
+      "sha256": "8c8d77ca1ebd63ddbaa7cc72a766f59c8953fb05c52d6f6a33af9df7899bdb54"
+    },
+    {
+      "file": "data/processed/orders.parquet",
+      "bytes": 944551,
+      "sha256": "874e41f3bca7fec172f728e2095c4674ba30d6b5e071f9ed71c513a50c4db025"
+    },
+    {
+      "file": "data/processed/pred_s2.parquet",
+      "bytes": 8694750,
+      "sha256": "be4095a16b9ea5236c5d52281c18900d81f0fb5d1b0ef8e258082106d200461e"
+    },
+    {
+      "file": "data/processed/pred_s4.parquet",
+      "bytes": 11819491,
+      "sha256": "6021cc8830bc7262b1959837c3a43b551afbf03a39c6c2d7f1f7064d11b3da03"
+    },
+    {
+      "file": "data/processed/reasons_s3.parquet",
+      "bytes": 1528504,
+      "sha256": "28ee5ab5868585d8189b01111d4914506f385c8b9baefc77c8da50743b087a63"
+    },
+    {
+      "file": "data/processed/snapshots.parquet",
+      "bytes": 9765085,
+      "sha256": "f43f07f8e246a10a19a04b5c96b6ea7b0799e2e3889e5e46d50e51eebed8d2e7"
+    },
+    {
+      "file": "data/processed/transactions_clean.parquet",
+      "bytes": 6576238,
+      "sha256": "e4ff33bce309e057885c6302d9ad7ca31ab341b6f2bffa50c4dbf5d0cee1742f"
+    }
+  ],
+  "data_aggregate_sha256": "9bfde43ffe0f40326c00e589220794dfe69a2c9aafbb758758ab9bc470756f08",
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "doubleml": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "shap": "0.54.1",
+    "highspy": "1.16.0",
+    "pulp": "4.2.0",
+    "torch": "2.15.0",
+    "pyepo": "2.2.7",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "requirements_lock": "outputs/manifests/requirements_lock.txt",
+    "requirements_lock_sha256": "e7470362320dbd7b12cd7fd640293930eb956b98f895cc876a3f91746e2bbd38",
+    "compat_matrix": [
+      {
+        "thanh_phan": "python",
+        "yeu_cau": "3.11 (khuyến nghị, CLAUDE.md §7)",
+        "phien_ban_chay_thuc_te": "3.14.7",
+        "dat_yeu_cau_toi_thieu": null,
+        "ghi_chu": "Toàn bộ pipeline GĐ1–GĐ8 chạy thực tế trên Python 3.14.7 (KHÔNG phải 3.11); chưa kiểm trên 3.11."
+      },
+      {
+        "thanh_phan": "nen_tang",
+        "yeu_cau": "macOS Apple Silicon (CLAUDE.md §7)",
+        "phien_ban_chay_thuc_te": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": "HiGHS qua highspy; LightGBM cần libomp (brew)."
+      },
+      {
+        "thanh_phan": "doubleml",
+        "yeu_cau": ">=0.9",
+        "phien_ban_chay_thuc_te": "0.11.4",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "econml",
+        "yeu_cau": ">=0.15",
+        "phien_ban_chay_thuc_te": "0.17.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "highspy",
+        "yeu_cau": ">=1.7",
+        "phien_ban_chay_thuc_te": "1.16.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "joblib",
+        "yeu_cau": ">=1.3",
+        "phien_ban_chay_thuc_te": "1.6.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "lightgbm",
+        "yeu_cau": ">=4.3",
+        "phien_ban_chay_thuc_te": "4.7.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "matplotlib",
+        "yeu_cau": ">=3.8",
+        "phien_ban_chay_thuc_te": "3.11.2",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "numpy",
+        "yeu_cau": ">=1.26",
+        "phien_ban_chay_thuc_te": "2.5.4",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "openpyxl",
+        "yeu_cau": ">=3.1",
+        "phien_ban_chay_thuc_te": "3.1.5",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pandas",
+        "yeu_cau": ">=2.2",
+        "phien_ban_chay_thuc_te": "3.1.1",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pandera",
+        "yeu_cau": ">=0.20",
+        "phien_ban_chay_thuc_te": "0.36.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pulp",
+        "yeu_cau": ">=2.8",
+        "phien_ban_chay_thuc_te": "4.2.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pyarrow",
+        "yeu_cau": ">=15",
+        "phien_ban_chay_thuc_te": "26.0.1",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pyepo",
+        "yeu_cau": ">=0.4",
+        "phien_ban_chay_thuc_te": "2.2.7",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pytest",
+        "yeu_cau": ">=8",
+        "phien_ban_chay_thuc_te": "9.2.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "pyyaml",
+        "yeu_cau": ">=6",
+        "phien_ban_chay_thuc_te": "6.0.3",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "scikit-learn",
+        "yeu_cau": ">=1.4",
+        "phien_ban_chay_thuc_te": "1.9.1",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "scikit-uplift",
+        "yeu_cau": ">=0.5",
+        "phien_ban_chay_thuc_te": "0.5.1",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "shap",
+        "yeu_cau": ">=0.45",
+        "phien_ban_chay_thuc_te": "0.54.1",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      },
+      {
+        "thanh_phan": "torch",
+        "yeu_cau": ">=2.2",
+        "phien_ban_chay_thuc_te": "2.15.0",
+        "dat_yeu_cau_toi_thieu": true,
+        "ghi_chu": ""
+      }
+    ],
+    "seed": 42,
+    "release_gates": {
+      "G1_data_contract_pass": true,
+      "G2_ece_max": 0.03,
+      "G2_brier_not_worse_than_raw": true,
+      "G3_qini_positive_actions_min": 2,
+      "G4_policy_value_lift_vs_legacy_min": 0.1,
+      "G4_normalized_regret_max": 0.35,
+      "G5_constraint_violations_max": 0,
+      "G6_latency_p95_seconds_max": 30,
+      "G7_segment_value_drop_max": 0.05
+    },
+    "ghi_chu": "BẢN NHÁP – chưa phải đóng băng chính thức; --open-locked chỉ chấp nhận s8_freeze."
+  }
+}

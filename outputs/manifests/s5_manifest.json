@@ -1,0 +1,142 @@
+{
+  "stage": "s5",
+  "created_utc": "2026-11-12T04:52:00+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s5_gamma_summary.csv",
+      "bytes": 956,
+      "sha256": "e54da3ec401e11774114f4253ed5237585b2e62a8fc304cf0dd6c6839d65492e"
+    },
+    {
+      "file": "outputs/tables/s5_pto_selection.csv",
+      "bytes": 883,
+      "sha256": "6d35793fd0816bfc464e7c90f3832b0c2fd38565fcb02a6bea73407b5cd45c2d"
+    },
+    {
+      "file": "outputs/tables/s5_verification_6.csv",
+      "bytes": 47968,
+      "sha256": "ea5220b0ce920cba033c0e82d225f1e843ee1a45679c50a85f670210a8012bf0"
+    },
+    {
+      "file": "outputs/tables/s5_verification_6_summary.csv",
+      "bytes": 373,
+      "sha256": "f8f4eaaf9c7f3e5e1ca9b7e3a7b71a80a3ed2aec3fe4c52de43571ca5d4d92d2"
+    },
+    {
+      "file": "outputs/tables/s5_spo_training.csv",
+      "bytes": 17284,
+      "sha256": "171848f0c5dcc09794b07fdf9d2550ffb3b34e69d3783f39a4a0aa75b8a8a1f1"
+    },
+    {
+      "file": "outputs/tables/s5_constraint_check.csv",
+      "bytes": 705,
+      "sha256": "cdb41d150db8c8aa2fd3bfd707c2338643c1be286811deabb2f15cf5cbbcac19"
+    },
+    {
+      "file": "outputs/figures/fig_s5_spo_training.png",
+      "bytes": 157258,
+      "sha256": "c408a59521803d002bc7440eeed0d89ecba8e501c3aa966385909b38cd5a3a30"
+    },
+    {
+      "file": "outputs/tables/s5_solver_crosscheck.csv",
+      "bytes": 2170,
+      "sha256": "db9fd523e8e16042f9593877cbfc87d3c20734a032dca5e66aff4c755b4dedee"
+    },
+    {
+      "file": "outputs/tables/s5_regret_instances.csv",
+      "bytes": 1012142,
+      "sha256": "e2a4a4ea5faa018c23bc5e4b3cb7549f73a9f97d7121cbea8d6fd47bd3f8e705"
+    },
+    {
+      "file": "outputs/tables/s5_regret_summary.csv",
+      "bytes": 3135,
+      "sha256": "663180265fee1d374d6d43643268df0a6f635e97139a15b003ca8b54e6c8b2f1"
+    },
+    {
+      "file": "outputs/tables/s5_spo_vs_pto_paired.csv",
+      "bytes": 457,
+      "sha256": "f058af622b8a25942bf1b28c1ee4c4e1c24d21e14922c518feb55fcec9f3352f"
+    },
+    {
+      "file": "outputs/tables/s5_mse_vs_regret.csv",
+      "bytes": 3526,
+      "sha256": "0be4c96cfe7d8f76430cf430d26daac0530c3aeb8ca32b7c71c56be311a31add"
+    },
+    {
+      "file": "outputs/figures/fig_s5_regret_by_method.png",
+      "bytes": 76028,
+      "sha256": "17a4a402de5bfa80c69d1b524c51d78c4dea21d5fd9df1412634b9335ca072eb"
+    },
+    {
+      "file": "outputs/figures/fig_s5_mse_vs_regret.png",
+      "bytes": 171654,
+      "sha256": "a8294ef7e6db11ed6fb5ca04fe68fd966a4b626aa04c1b9bf0f1dfa4c9d554c0"
+    },
+    {
+      "file": "models/s5_pto_linear.joblib",
+      "bytes": 3162,
+      "sha256": "9bf9fc0ff879803ee7b8171f40032128f4ef6b74e164d78c98134dfdd2eacd52"
+    },
+    {
+      "file": "models/s5_pto_lgbm.joblib",
+      "bytes": 332042,
+      "sha256": "68fc2174daa99f8f1109881b82fe399e15c6efd6f005b4d99208bc59faad0740"
+    },
+    {
+      "file": "models/s5_spo_linear.joblib",
+      "bytes": 8379,
+      "sha256": "8cb38ecf70ce316271c3d8e09deef7ffed335dcdf84853ba985ca1aae40de43d"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "highspy": "1.16.0",
+    "PuLP": "4.2.0",
+    "matplotlib": "3.11.2"
+  },
+  "extra": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_inst": {
+      "train": 300,
+      "valid": 100,
+      "calib": 120
+    },
+    "batch": 100,
+    "lrs": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "epochs": 15,
+    "alpha_pto": 100000.0,
+    "lgbm_pto": [
+      4,
+      200
+    ],
+    "verification_6": {
+      "so_nghiem_kha_thi": 418,
+      "tong_so_nghiem": 4096,
+      "max_lech_z_sao": 2.842170943040401e-14,
+      "max_lech_spo": 2.842170943040401e-14,
+      "max_lech_spo_plus": 5.684341886080802e-14,
+      "ty_le_spo_plus_ge_spo": 1.0,
+      "min_spo": -1.4210854715202004e-14,
+      "ty_le_dao_ham_khop_sai_phan": 1.0,
+      "ty_le_giam_khi_di_nguoc_subgradient (đúng dấu)": 1.0,
+      "ty_le_giam_khi_dung_dau_sai": 0.0,
+      "spo_plus_tai_chat_bang_c": 0.0
+    },
+    "runtime_s": 327
+  }
+}

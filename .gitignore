@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+# Dữ liệu thô: chỉ giữ online_retail_ii.zip (CC BY 4.0). Bản giải nén trùng nội dung; Hillstrom KHÔNG nêu giấy phép nên không phân phối lại.
+data/raw/online_retail_II.xlsx
+data/raw/hillstrom/
+data/processed/raw_combined.parquet
+
+# ghi chú làm việc nội bộ
+outputs/manifests/handoff*.md
+outputs/manifests/s8_handoff_packaging.md

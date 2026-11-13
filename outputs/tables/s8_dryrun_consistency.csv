@@ -1,0 +1,7 @@
+doi_chieu,so_cap,lech_lon_nhat
+Giá trị hiện thực theo kỳ × 4 chính sách vs s7_policy_value_by_period_v21 (calib),12,1.8189894035458565e-12
+Giá trị kỳ vọng theo kỳ × 4 chính sách vs s7 v2.1 (calib),12,1.0231815394945443e-12
+Qini calib (CausalForestDML) vs s4_qini.csv,3,0.0
+"Kiểm toán ràng buộc (số voucher, a2, cuộc gọi, ngân sách) vs s7_constraint_audit_v21 (calib)",6,0.0
+Mã lý do top-3 tính lại vs reasons_s3 (calib) – tỷ lệ KHÁC,10981,0.0
+"P95 độ trễ (s8, gồm mã lý do) − P95 GĐ7 v2.1 (không gồm mã lý do), giây",1,0.8718693326463837

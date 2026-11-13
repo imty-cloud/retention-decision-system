@@ -1,0 +1,144 @@
+{
+  "stage": "s5_mo_rong",
+  "created_utc": "2026-11-12T05:07:42+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s5_gamma_summary_mo_rong.csv",
+      "bytes": 956,
+      "sha256": "e54da3ec401e11774114f4253ed5237585b2e62a8fc304cf0dd6c6839d65492e"
+    },
+    {
+      "file": "outputs/tables/s5_grid_extension_rule.csv",
+      "bytes": 558,
+      "sha256": "1b1f3bb8a45d90bcff98abff7c19e801aace9c6a209d6afbe8bcbb6034dcf960"
+    },
+    {
+      "file": "outputs/tables/s5_pto_selection_mo_rong.csv",
+      "bytes": 1306,
+      "sha256": "c3ab7029afb0bd8f6847b37bb4ef41f679e17e6e8a229ce236d0cecf5afe3074"
+    },
+    {
+      "file": "outputs/tables/s5_spo_training_mo_rong.csv",
+      "bytes": 51566,
+      "sha256": "3fe7532c4a6da4cde48563c2345e30fdf4464dcbf65737864baf926c2a51f917"
+    },
+    {
+      "file": "outputs/tables/s5_constraint_check_mo_rong.csv",
+      "bytes": 665,
+      "sha256": "daf8da93fd28d98fdae4875e4c218c51cf6705438022579246ef9c0090a505f2"
+    },
+    {
+      "file": "outputs/figures/fig_s5_spo_training_mo_rong.png",
+      "bytes": 195986,
+      "sha256": "bc62804b2d14676d0d5621e0bca8c2c841964f092eb07861e849a18f1e574637"
+    },
+    {
+      "file": "outputs/tables/s5_regret_instances_mo_rong.csv",
+      "bytes": 1010353,
+      "sha256": "60bfd2bce561baaece509217b7334e63eff5f2edfba9e410ea7ac7f8730cd4c2"
+    },
+    {
+      "file": "outputs/tables/s5_regret_summary_mo_rong.csv",
+      "bytes": 3113,
+      "sha256": "f54c57326a06ef39fed11181be98f184130d41ceb2765f757bee9da903d91cb8"
+    },
+    {
+      "file": "outputs/tables/s5_spo_vs_pto_paired_mo_rong.csv",
+      "bytes": 430,
+      "sha256": "ce45239f190be92e242db16fe9f8ceeea6abbefc312aa2d3c85cc2e0c7513bf1"
+    },
+    {
+      "file": "outputs/tables/s5_mse_vs_regret_mo_rong.csv",
+      "bytes": 3528,
+      "sha256": "6a4ce19e569c11c2ca4985509febe9d7dc8dd8d851df10590e76839497fcd789"
+    },
+    {
+      "file": "outputs/figures/fig_s5_regret_by_method_mo_rong.png",
+      "bytes": 76835,
+      "sha256": "ce48e895b651997a433081f74bb142dc92b82657880006bf2ccda87fc34587af"
+    },
+    {
+      "file": "outputs/figures/fig_s5_mse_vs_regret_mo_rong.png",
+      "bytes": 167942,
+      "sha256": "7f43f0bdb7fdf99d3a7b6127fac00200448eec695d77f7e429efa24cee5733c2"
+    },
+    {
+      "file": "models/s5_pto_linear_mo_rong.joblib",
+      "bytes": 3162,
+      "sha256": "03c648360cabb3e3f5f5ad602a90ed546ed5eec324ba6cb31cc1e3023fd36f15"
+    },
+    {
+      "file": "models/s5_pto_lgbm_mo_rong.joblib",
+      "bytes": 49633,
+      "sha256": "db91ec1d5cffbe40b37be3f57138e417b64686345995fdffc2859da0cd0c3a5a"
+    },
+    {
+      "file": "models/s5_spo_linear_mo_rong.joblib",
+      "bytes": 8379,
+      "sha256": "ea8bb05155775a030fc7827113da869520c03df3f8ccb57efd87d4fcaf0fb4ae"
+    },
+    {
+      "file": "outputs/tables/s5_regret_summary_hai_luoi.csv",
+      "bytes": 6270,
+      "sha256": "98961e6c7bd5b8b6f8a6e873e9f47666a85b142c4d537a13158531e68d202e3b"
+    },
+    {
+      "file": "outputs/tables/s5_spo_vs_pto_paired_hai_luoi.csv",
+      "bytes": 788,
+      "sha256": "3a53d5862d3b898f7dee21fcf48698eb77ae583cd19060e04877f059b859e11d"
+    },
+    {
+      "file": "outputs/figures/fig_s5_valid_loss_hai_luoi.png",
+      "bytes": 245478,
+      "sha256": "3629bc810a4ad598c8ea821bbd035b755ef7244681816521f7837fc9d9d33ee3"
+    },
+    {
+      "file": "outputs/figures/fig_s5_regret_hai_luoi.png",
+      "bytes": 74059,
+      "sha256": "9cfb12a40ffb71631069dce0bce39c2e8668a47fb83600dc4d6f627b53cb3a63"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "highspy": "1.16.0",
+    "PuLP": "4.2.0",
+    "matplotlib": "3.11.2"
+  },
+  "extra": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_inst": {
+      "train": 300,
+      "valid": 100,
+      "calib": 120
+    },
+    "batch": 100,
+    "lrs": [
+      0.003,
+      0.01,
+      0.03,
+      0.09,
+      0.3
+    ],
+    "epochs": 45,
+    "patience": 3,
+    "luoi": "mo_rong",
+    "alpha_pto": 1000000.0,
+    "lgbm_pto": [
+      4,
+      20
+    ],
+    "verification_6": null,
+    "runtime_s": 928
+  }
+}

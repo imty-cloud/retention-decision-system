@@ -1,0 +1,15 @@
+thiet_ke,nguon_se,se_mot_ky,kich_ban_hieu_ung,hieu_ung,so_ky_can_power80,ghi_chu,ty_le_doi_chung
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b valid,14732.932687991866,Δ = £2 000/kỳ,2000.0,425.91809619714934,,
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b valid,14732.932687991866,Δ = £4 500/kỳ (6b: chênh thật ≈ £4–5k),4500.0,84.13196961918999,,
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b valid,14732.932687991866,"Δ = ước lượng DR valid (£7,348)",7348.206697109235,31.55174300059474,,
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b calib,26024.37645728279,Δ = £2 000/kỳ,2000.0,1328.9491035392862,,
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b calib,26024.37645728279,Δ = £4 500/kỳ (6b: chênh thật ≈ £4–5k),4500.0,262.5084648966491,,
+Ghi log 20 % ngẫu nhiên (s5b) – MILP V̂ − luật cũ,s5b calib,26024.37645728279,"Δ = ước lượng DR calib (£-15,154)",-15153.600634113265,,ước lượng âm ⇒ không dùng làm hiệu ứng mục tiêu,
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",12800.232392521062,"Δ = V̂ kế hoạch (£2,332/kỳ, lạc quan)",2331.654666754855,236.5456280061465,SE đo trực tiếp (bootstrap cụm),0.1
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",12800.232392521062,"Δ = ước lượng DR valid+calib (£1,255/kỳ)",1255.1283182395284,816.3325751614614,SE đo trực tiếp (bootstrap cụm),0.1
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",8533.488261680708,"Δ = V̂ kế hoạch (£2,332/kỳ, lạc quan)",2331.654666754855,105.131390224954,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.2
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",8533.488261680708,"Δ = ước lượng DR valid+calib (£1,255/kỳ)",1255.1283182395284,362.81447784953826,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.2
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",6517.559316861496,"Δ = V̂ kế hoạch (£2,332/kỳ, lạc quan)",2331.654666754855,61.32664429788986,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.3
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",6517.559316861496,"Δ = ước lượng DR valid+calib (£1,255/kỳ)",1255.1283182395284,211.64177874556407,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.3
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",4266.744130840354,"Δ = V̂ kế hoạch (£2,332/kỳ, lạc quan)",2331.654666754855,26.2828475562385,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.5
+Router: đối chứng trong nhóm được chọn – Current so với không làm gì,"valid+calib (s7 v2.1, 7 kỳ)",4266.744130840354,"Δ = ước lượng DR valid+calib (£1,255/kỳ)",1255.1283182395284,90.70361946238457,SE ở tỷ lệ khác 10 % là xấp xỉ theo (1−p)/p,0.5

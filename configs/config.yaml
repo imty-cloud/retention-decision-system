@@ -1,0 +1,103 @@
+# =====================================================================
+# PTDLNC – Hệ thống ra quyết định giữ chân khách hàng đa kênh (Online Retail II)
+# Mọi tham số thiết kế nằm ở đây. Thay đổi => chạy lại pipeline => manifest mới.
+# =====================================================================
+project:
+  name: retention-prescriptive-system
+  seed: 42
+
+paths:
+  raw_zip: data/raw/online_retail_ii.zip
+  raw_xlsx: data/raw/online_retail_II.xlsx
+  transactions: data/processed/transactions_clean.parquet
+  orders: data/processed/orders.parquet
+  snapshots: data/processed/snapshots.parquet
+  tables: outputs/tables
+  figures: outputs/figures
+  manifests: outputs/manifests
+
+# ---------------- Giai đoạn 1: thiết kế bài toán & dữ liệu ----------------
+decision:
+  unit: "customer_id x t0"
+  t0_first: "2010-06-07"        # thứ Hai; có >= 6 tháng lịch sử trước đó
+  t0_freq_days: 14              # chụp dữ liệu 2 tuần/lần
+  horizon_days: 30              # kỳ kết quả H: mua lại trong [t0, t0 + H)
+  feature_latency_days: 1       # dữ liệu ngày t0-1 chưa kịp vào kho => chỉ dùng sự kiện < t0 - 1 ngày
+  eligibility_lookback_days: 365  # đủ điều kiện: có >= 1 đơn hợp lệ trong 365 ngày trước t0
+  data_end: "2011-12-09"        # ngày cuối của dữ liệu
+
+splits:
+  # Khối theo t0. Embargo giữa hai khối liên tiếp phải >= horizon_days (kiểm tra tự động).
+  # Lưới t0 hai tuần/lần từ 2010-06-07; t0 nằm giữa các khối là vùng embargo (bị loại).
+  train:  ["2010-06-07", "2010-12-20"]   # 15 kỳ
+  valid:  ["2011-01-31", "2011-03-14"]   # 4 kỳ – chọn mô hình / siêu tham số
+  calib:  ["2011-04-25", "2011-05-23"]   # 3 kỳ – chỉ để khớp bộ hiệu chỉnh xác suất
+  locked: ["2011-07-04", "2011-08-01"]   # 3 kỳ – Locked Test: mở 1 lần sau khi đóng băng
+  oot:    ["2011-09-12", "2011-11-07"]   # 5 kỳ – Out-of-Time: mùa cao điểm Q4, phát lại như vận hành
+  entity_holdout_pct: 15        # % mã khách giữ riêng, không bao giờ xuất hiện ở train/valid/calib
+  entity_holdout_salt: "ptdlnc-2026"
+
+cleaning:
+  product_code_regex: '^\d{5}[A-Za-z]{0,2}$'   # mã hàng thật; POST, D, M, BANK CHARGES... bị loại
+  min_price: 0.0
+
+# ---------------- Tham số kinh doanh dùng từ GĐ4 trở đi ----------------
+business:
+  gross_margin_rate: 0.30       # giả định biên lợi nhuận gộp, phân tích độ nhạy 0.2–0.4
+  actions:
+    a0: {name: "no_action",          channel: none,  discount: 0.00, contact_cost: 0.00, face_value_cap: 0}
+    a1: {name: "email_voucher_10",   channel: email, discount: 0.10, contact_cost: 0.02, face_value_cap: 30}
+    a2: {name: "email_voucher_20",   channel: email, discount: 0.20, contact_cost: 0.02, face_value_cap: 60}
+    a3: {name: "am_call_voucher_10", channel: call,  discount: 0.10, contact_cost: 3.00, face_value_cap: 30}
+  budget_face_value_per_t0: 8000    # B: tổng mệnh giá phát hành mỗi kỳ (GBP) – chọn để ràng buộc có hiệu lực
+  call_capacity_per_t0: 60          # K: số cuộc gọi account manager mỗi kỳ
+  max_share_deep_voucher: 0.25      # voucher 20% <= 25% số voucher phát ra
+  frequency_cap_days: 28            # guardrail: không gửi ưu đãi nếu đã nhận trong 28 ngày
+  control_holdout_pct: 10           # nhóm đối chứng ngẫu nhiên trong Router
+  # [thêm ở GĐ5] độ phủ tối thiểu theo phân khúc: mỗi phân khúc (cột coverage_segment_col) phải có ít nhất
+  # ceil(min_coverage_per_segment × số khách) khách nhận voucher (a1/a2/a3), không vượt số khách đủ điều kiện.
+  min_coverage_per_segment: 0.03
+  coverage_segment_col: is_uk       # UK / non-UK (cùng phân khúc với cổng G7)
+  guardrail_cancel_rate_max: 0.3    # [thêm ở GĐ5, theo đặc tả GĐ7] cancel_rate_365 > 0.3 → chặn mọi voucher
+
+# ---------------- GĐ1b: lớp can thiệp bán tổng hợp (data-generating process) ----------------
+# Y(0) = hành vi mua lại THẬT. Y(a) sinh từ hàm đã biết => có "đáp án" để tính Regret thật.
+intervention_dgp:
+  seed: 2026
+  # Xác suất chuyển đổi người KHÔNG mua (Y0=0 -> 1) và xác suất làm mất người ĐANG mua (Y0=1 -> 0)
+  # r, f, m, w = hạng phần trăm trong cùng t0 của recency, n_orders_365, aov_365, units_per_order_365
+  lapse_center: 0.65
+  lapse_width: 0.20
+  c1_scale: 0.12        # c1 = c1_scale*lapse*(1-0.6f) + c_floor
+  c_floor: 0.02
+  c2_mult: 1.5          # c2 = c2_mult*c1 + c2_price_sens*(1-m)*lapse  (khách nhạy giá đang rời đi)
+  c2_price_sens: 0.15
+  c3_mult: 1.3          # c3 = c3_mult*c1 + c3_value*m*lapse
+  c3_value: 0.08
+  d1: 0.01              # d1 = d1*f
+  d2: 0.02              # d2 = d2*f
+  d3: 0.10              # d3 = d3*f*w   (khách sỉ mua đều bị gọi điện -> Sleeping Dogs)
+  basket_noise_sd: 0.30 # giá trị giỏ của người mới chuyển đổi = aov_365 * lognormal(0, sd)
+  oot_persuasion_scale: 1.0   # kịch bản trôi ở OOT: đặt 0.6 để mô phỏng khách bớt nhạy ưu đãi
+  # Chính sách lịch sử (logging policy): random_arm_pct% ngẫu nhiên đều, còn lại theo luật RFM (gây nhiễu)
+  random_arm_pct: 20
+  legacy_logits: {a0: 0.5, a1_r: 0.8, a2_mr: 1.5, a3_m: 2.0, a3_bias: -0.5}
+
+# ---------------- GĐ8: Cổng phát hành – CÔNG BỐ TRƯỚC, KHÔNG ĐƯỢC SỬA SAU KHI MỞ LOCKED TEST ----------------
+release_gates:
+  G1_data_contract_pass: true
+  G2_ece_max: 0.03               # ECE (15 bin equal-mass) của μ0 đã hiệu chỉnh
+  G2_brier_not_worse_than_raw: true
+  G3_qini_positive_actions_min: 2   # số hành động có hệ số Qini > 0 với CI bootstrap 95% > 0 (nhánh ngẫu nhiên)
+  G4_policy_value_lift_vs_legacy_min: 0.10   # giá trị chính sách >= legacy * (1 + 10%)
+  G4_normalized_regret_max: 0.35
+  G5_constraint_violations_max: 0
+  G6_latency_p95_seconds_max: 30  # một lô t0 đầu-cuối (đặc trưng -> chấm điểm -> MILP -> router)
+  G7_segment_value_drop_max: 0.05 # không phân khúc (UK / non-UK) nào kém legacy quá 5%
+
+monitoring:
+  psi_bins: 10
+  psi_warn: 0.10
+  psi_alert: 0.25
+  ece_alert: 0.05
+  action_tvd_alert: 0.20

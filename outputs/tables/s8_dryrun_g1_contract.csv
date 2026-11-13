@@ -1,0 +1,8 @@
+kiem_tra,dat,chi_tiet
+Schema snapshot GĐ1 (s1_data.snapshot_schema),True,10981 dòng
+"Hợp đồng logged (propensity, nhãn quan sát, cutoff, độ trễ nhãn)",True,10981 dòng
+"Khóa (khách, t0) logged = snapshot",True,logged 10981 · snapshot 10981 · chung 10981
+y_obs dưới a0 = hành vi thật Y(0) của snapshot,True,2819 dòng a0
+Entity holdout không xuất hiện ở train/valid/calib,True,dòng holdout trong tập mô hình = 0; khách holdout của tập chấm trùng tập mô hình = 0; khách holdout trong tập chấm = 0
+Embargo giữa các khối ≥ độ trễ nhãn (s1_embargo_check),True,gap tối thiểu 42 ngày
+Hợp đồng đầu vào Router (INPUT_SCHEMA) mọi kỳ,True,3/3 kỳ

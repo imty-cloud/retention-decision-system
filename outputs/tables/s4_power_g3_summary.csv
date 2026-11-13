@@ -1,0 +1,10 @@
+quan_the,kich_ban,learner,P_G3_dat_rho0,P_G3_dat_rho0.3,so_hanh_dong_ky_vong_dat
+locked toàn bộ,"S1 calib riêng (chính, không thiên lệch chọn)",CausalForestDML,0.044109588381874794,0.06547,0.5250297688271898
+locked toàn bộ,S2 valid+calib gộp (lạc quan),CausalForestDML,0.09872302112999434,0.131205,0.6363222815351229
+locked toàn bộ,S3 train ngoài fold (tham khảo),CausalForestDML,0.17387037155262264,0.210695,0.8132178913596602
+locked khách thường,"S1 calib riêng (chính, không thiên lệch chọn)",CausalForestDML,0.03643611793350386,0.05725,0.46443088094983276
+locked khách thường,S2 valid+calib gộp (lạc quan),CausalForestDML,0.07834419923402677,0.110345,0.5601327212464045
+locked khách thường,S3 train ngoài fold (tham khảo),CausalForestDML,0.13596893647360878,0.17186,0.7104929325560781
+locked entity-holdout,"S1 calib riêng (chính, không thiên lệch chọn)",CausalForestDML,0.007660983045409849,0.01876,0.16898076942992715
+locked entity-holdout,S2 valid+calib gộp (lạc quan),CausalForestDML,0.011665341113161793,0.02517,0.19686429682126586
+locked entity-holdout,S3 train ngoài fold (tham khảo),CausalForestDML,0.016218508164098387,0.032975,0.22909891948237182

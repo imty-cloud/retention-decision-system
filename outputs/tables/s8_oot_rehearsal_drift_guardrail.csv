@@ -1,0 +1,7 @@
+nhan,kich_ban,chinh_sach,gia_tri_hien_thuc,gia_tri_ky_vong,so_voucher,vi_pham_quy_dinh,gui_khach_opt_out_cap_huy,luot_bi_chan_cung,HITL_tu_choi_ha_cap,ton_that_tranh_duoc_hien_thuc,ton_that_tranh_duoc_ky_vong
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",không trôi,KHÔNG guardrail: MILP thuần (miền v1),12844.995428653736,13487.090588715972,752.0,3,3,0,0,0.0,0.0
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",không trôi,"Đề xuất MILP (miền v2.1, trước Router)",11309.755271380047,10200.171146473727,767.0,0,0,0,0,-1535.240157273689,-3286.9194422422443
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",không trôi,CÓ guardrail: MILP qua Router v2.1,9600.379901460803,9800.830101817737,527.0,0,0,0,184,-3244.615527192933,-3686.2604868982344
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",trôi (τ × 0.6),KHÔNG guardrail: MILP thuần (miền v1),7837.109267090957,6190.225492761372,752.0,3,3,0,0,0.0,0.0
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",trôi (τ × 0.6),"Đề xuất MILP (miền v2.1, trước Router)",5228.561011308652,4332.299987142319,767.0,0,0,0,0,-2608.5482557823043,-1857.9255056190532
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",trôi (τ × 0.6),CÓ guardrail: MILP qua Router v2.1,5067.55073064422,4904.411912239494,527.0,0,0,0,184,-2769.558536446737,-1285.813580521878

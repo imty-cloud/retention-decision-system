@@ -1,0 +1,4 @@
+nhan,phuong_phap,uoc_luong_GBP_moi_khach_duoc_chon,that_GBP_moi_khach_duoc_chon,do_chech,n_duoc_gui,n_doi_chung,n_khong_duoc_chon
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",So thô: được gửi − không được chọn (KHÔNG đối chứng),9.604093470115671,23.224452706865538,-13.620359236749866,527,56,10214
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",Đối chứng ngẫu nhiên: được gửi − đối chứng,-4.0571519668196245,23.224452706865538,-27.281604673685163,527,56,10214
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",DR/AIPW (có đối chứng + IPW),10.683840195916332,23.224452706865538,-12.540612510949206,527,56,10214

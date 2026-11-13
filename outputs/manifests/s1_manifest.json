@@ -1,0 +1,156 @@
+{
+  "stage": "s1",
+  "created_utc": "2026-11-12T03:25:08+00:00",
+  "files": [
+    {
+      "file": "data/raw/online_retail_ii.zip",
+      "bytes": 45622418,
+      "sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb"
+    },
+    {
+      "file": "data/raw/online_retail_II.xlsx",
+      "bytes": 45622278,
+      "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+    },
+    {
+      "file": "data/processed/transactions_clean.parquet",
+      "bytes": 6576238,
+      "sha256": "e4ff33bce309e057885c6302d9ad7ca31ab341b6f2bffa50c4dbf5d0cee1742f"
+    },
+    {
+      "file": "data/processed/orders.parquet",
+      "bytes": 944551,
+      "sha256": "874e41f3bca7fec172f728e2095c4674ba30d6b5e071f9ed71c513a50c4db025"
+    },
+    {
+      "file": "data/processed/cancels.parquet",
+      "bytes": 150068,
+      "sha256": "4a92e1026ceb3532cc7fb3c39babf59765ed6eb1c5c968cc16021c01120f1ad3"
+    },
+    {
+      "file": "data/processed/snapshots.parquet",
+      "bytes": 9765085,
+      "sha256": "f43f07f8e246a10a19a04b5c96b6ea7b0799e2e3889e5e46d50e51eebed8d2e7"
+    },
+    {
+      "file": "outputs/tables/s1_cleaning_log.csv",
+      "bytes": 678,
+      "sha256": "0eed0cfa93afbcbf08d3f6a23ebf1c72b8eb2ec0fa7831268b1d14e8c566d238"
+    },
+    {
+      "file": "outputs/tables/s1_data_dictionary.csv",
+      "bytes": 3515,
+      "sha256": "0fad82d70210a8847a1d4ce48dc3b937dc19c2fa035ed6850c3a31af7bf3a717"
+    },
+    {
+      "file": "outputs/tables/s1_leakage_tests.csv",
+      "bytes": 1440,
+      "sha256": "466c14381d2b014535d1929bc1924a08c3f49eaa3be149fc43ab81abdd67a6b4"
+    },
+    {
+      "file": "outputs/tables/s1_single_feature_auc.csv",
+      "bytes": 998,
+      "sha256": "b84163adf09f6ef09daef5f58b16fb0a7d955a3f6e315ceb0d3ccf4522ba347b"
+    },
+    {
+      "file": "outputs/tables/s1_embargo_check.csv",
+      "bytes": 274,
+      "sha256": "d0c565439acf7788e6fadf84775392d38e8be67d0ba1247f3d36197bd0b760cf"
+    },
+    {
+      "file": "outputs/tables/s1_split_summary.csv",
+      "bytes": 537,
+      "sha256": "2b02c7f03c60a143cd1e43e771fc8d0d8794cb7fe10c3a1e8cefa4aadeb73ea2"
+    },
+    {
+      "file": "outputs/figures/fig_s1_split_timeline.png",
+      "bytes": 57207,
+      "sha256": "8ddc2996908072602316851b6a83f7be01b39b6541e37a378a6707e7e6d47b46"
+    },
+    {
+      "file": "outputs/figures/fig_s1_base_rate_by_t0.png",
+      "bytes": 104703,
+      "sha256": "2ba5c2d8ffed436be7e9457574d2301c4b3dcff9dee76f61b5291472da2dc472"
+    }
+  ],
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v378-x86_64-with-glibc2.39",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "config_decision": {
+      "unit": "customer_id x t0",
+      "t0_first": "2010-06-07",
+      "t0_freq_days": 14,
+      "horizon_days": 30,
+      "feature_latency_days": 1,
+      "eligibility_lookback_days": 365,
+      "data_end": "2011-12-09"
+    },
+    "config_splits": {
+      "train": [
+        "2010-06-07",
+        "2010-12-20"
+      ],
+      "valid": [
+        "2011-01-31",
+        "2011-03-14"
+      ],
+      "calib": [
+        "2011-04-25",
+        "2011-05-23"
+      ],
+      "locked": [
+        "2011-07-04",
+        "2011-08-01"
+      ],
+      "oot": [
+        "2011-09-12",
+        "2011-11-07"
+      ],
+      "entity_holdout_pct": 15,
+      "entity_holdout_salt": "ptdlnc-2026"
+    },
+    "features_num": [
+      "recency_days",
+      "tenure_days",
+      "n_orders_all",
+      "value_all",
+      "n_orders_30",
+      "n_orders_90",
+      "n_orders_180",
+      "n_orders_365",
+      "value_30",
+      "value_90",
+      "value_180",
+      "value_365",
+      "aov_365",
+      "aov_all",
+      "units_per_order_365",
+      "lines_per_order_365",
+      "distinct_products_365",
+      "ipt_mean_days",
+      "ipt_std_days",
+      "is_one_time",
+      "overdue_ratio",
+      "n_cancels_365",
+      "cancel_value_365",
+      "cancel_rate_365",
+      "days_since_last_cancel",
+      "value_trend_90_365",
+      "is_uk",
+      "t0_month",
+      "days_to_xmas"
+    ],
+    "features_cat": [
+      "country"
+    ]
+  }
+}

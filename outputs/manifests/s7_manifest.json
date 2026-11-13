@@ -1,0 +1,123 @@
+{
+  "stage": "s7",
+  "created_utc": "2026-11-12T09:09:21+00:00",
+  "files": [
+    {
+      "file": "data/processed/decisions_s7.parquet",
+      "bytes": 2002238,
+      "sha256": "402800e73eedca11946e61e5da7df7f6ce0ae47077439b57a6fa209601a902cb"
+    },
+    {
+      "file": "outputs/tables/s7_scoring_consistency.csv",
+      "bytes": 731,
+      "sha256": "131aae0cb7ca4dd5b4ebb3c28e03e1da8400045e11b237dae424b2509943c256"
+    },
+    {
+      "file": "outputs/tables/s7_policy_value_by_period.csv",
+      "bytes": 8610,
+      "sha256": "1a0ad1daf85088aa8207f557c77a6d23d3de70aa0d01d73fd4387b30f41d6bd3"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_rates_by_period.csv",
+      "bytes": 2102,
+      "sha256": "6eb7bbd45f8969dc963d5adedd9f326429fee47f945e4fa6ed3611839c3c65ce"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_cost_by_period.csv",
+      "bytes": 4818,
+      "sha256": "97156279ee6ec9b63c78c16e2608f4368125bf9bcd71e27a8fcb0b5603c9a28c"
+    },
+    {
+      "file": "outputs/tables/s7_policy_value_summary.csv",
+      "bytes": 1354,
+      "sha256": "9f4c7ae94927eb8aed191981ac789e0ec20a4482de458f3c7103eaedfaecde3a"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_rates.csv",
+      "bytes": 521,
+      "sha256": "9b38edadfae83a3c4f61742644ceaf6cd03f50daf11d5f05f34f53d7819cd6b3"
+    },
+    {
+      "file": "outputs/tables/s7_decision_flow.csv",
+      "bytes": 476,
+      "sha256": "8edde3d4529ac29e5466d007930584fd85e2f9378aa9ec4d215266ea55702485"
+    },
+    {
+      "file": "outputs/tables/s7_hitl_breakdown.csv",
+      "bytes": 147,
+      "sha256": "cc6e42369a81b389132745d199bad0fcda93d90da53577106dc0784f3b0b085a"
+    },
+    {
+      "file": "outputs/tables/s7_hitl_queue_sample.csv",
+      "bytes": 67163,
+      "sha256": "f563408ed04de1daca931e4827206d48365fc56505f3f503a130e6c5f02fad7b"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_cost.csv",
+      "bytes": 958,
+      "sha256": "a3dc75dddb0370efa291281bbdf03f277eb88100def3ee6d88347954f9a40700"
+    },
+    {
+      "file": "outputs/tables/s7_hitl_reviewer_value.csv",
+      "bytes": 213,
+      "sha256": "f63b3aed43030bfb30d5214f2e2844d091986788855dda1424250ce5a6c979ff"
+    },
+    {
+      "file": "outputs/tables/s7_latency_runs.csv",
+      "bytes": 30751,
+      "sha256": "c8b3a2c6b91dada8af58a884bf82f1200256118e4692a56237b8587f9acc2948"
+    },
+    {
+      "file": "outputs/tables/s7_latency_percentiles.csv",
+      "bytes": 680,
+      "sha256": "c4a6a3f519cecb00deb9ccff8abde8373c2b1d1449c74f818f36d74e932f8abf"
+    },
+    {
+      "file": "outputs/tables/s7_latency_by_period.csv",
+      "bytes": 489,
+      "sha256": "c73b114e86c07414a17f2c798ba9327d881f2992ff82868489ee0048c4bc787e"
+    },
+    {
+      "file": "outputs/tables/s7_idempotency.csv",
+      "bytes": 118,
+      "sha256": "c0cef93741bf40bcd9a884271b5abba592fcb2570de5fce0c98ad57506d056fe"
+    },
+    {
+      "file": "outputs/figures/fig_s7_policy_value.png",
+      "bytes": 87072,
+      "sha256": "68a343fc8878e2c8e16f3d4829a540a2df9cae485eacda40acee78f9c5a15d9a"
+    },
+    {
+      "file": "outputs/figures/fig_s7_decision_flow.png",
+      "bytes": 61343,
+      "sha256": "209666b65b4d7181442f64bf13ab7bf7fbe3ad12ca93716f1987dbc3b9c5cb8b"
+    },
+    {
+      "file": "outputs/figures/fig_s7_latency.png",
+      "bytes": 38270,
+      "sha256": "6aaa0eb3de923891b619dcbf1caa669bd51b8af9c2a4ebe61f4bd12bb9ceee9e"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pandera": "0.36.0",
+    "highspy": "1.16.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "matplotlib": "3.11.2"
+  },
+  "extra": {
+    "policy_version": "router-v1.0",
+    "model_version": "mu0:2d657ac0|cal:b72282a6|S:8120cbec|cate:cd332637",
+    "s_wide_threshold": 1833.2785142895825,
+    "control_pct": 10,
+    "opt_out_pct": 8,
+    "freq_cap_days": 28,
+    "n_latency_runs": 210,
+    "runtime_s": 153
+  }
+}

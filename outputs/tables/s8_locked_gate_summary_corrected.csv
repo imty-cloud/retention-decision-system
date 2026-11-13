@@ -1,0 +1,4 @@
+quan_the,G1,G2,G3,G4a,G4b,G5,G6,G7,G4,ghi_chu
+Toàn bộ (chấm chính thức),ĐẠT,ĐẠT,ĐẠT,ĐẠT,TRƯỢT,ĐẠT,ĐẠT,ĐẠT,TRƯỢT,Lập lại từ s8_locked_gates.csv; s8_locked_gate_summary.csv gốc in toàn n/a do lỗi hiển thị (so sánh `is True` với numpy.bool_)
+Khách thường (is_entity_holdout=0),n/a,ĐẠT,TRƯỢT,ĐẠT,TRƯỢT,n/a,n/a,ĐẠT,TRƯỢT,Lập lại từ s8_locked_gates.csv; s8_locked_gate_summary.csv gốc in toàn n/a do lỗi hiển thị (so sánh `is True` với numpy.bool_)
+"Entity-holdout (is_entity_holdout=1, mô tả)",n/a,TRƯỢT,TRƯỢT,TRƯỢT,TRƯỢT,n/a,n/a,TRƯỢT,TRƯỢT,Lập lại từ s8_locked_gates.csv; s8_locked_gate_summary.csv gốc in toàn n/a do lỗi hiển thị (so sánh `is True` với numpy.bool_)

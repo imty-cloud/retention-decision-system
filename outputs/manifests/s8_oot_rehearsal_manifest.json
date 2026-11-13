@@ -1,0 +1,108 @@
+{
+  "stage": "s8_oot_rehearsal",
+  "created_utc": "2026-11-12T14:27:38+00:00",
+  "files": [
+    {
+      "file": "data/processed/decisions_s8_oot_rehearsal.parquet",
+      "bytes": 909574,
+      "sha256": "d3e8ef1f76ba3eaf091043ee5b9cbe3641e86a76e0531831c9d122d278b5021f"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_latency.csv",
+      "bytes": 3914,
+      "sha256": "61f20a1815db4c4f1b30ad8cfeb7850d89959a2b1146c8ac0aff373e72f4e34c"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_psi.csv",
+      "bytes": 19671,
+      "sha256": "2b22bd5397c3e20b8757fd0ab9407430b59207a09750c3d3fe6477c06a551958"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_action_tvd.csv",
+      "bytes": 900,
+      "sha256": "b16e1302e636a2f9bed5db484af28347998c72130644cb981a87673cfa72b7e9"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_calibration_matured.csv",
+      "bytes": 2111,
+      "sha256": "71cb61be058ac5c46a7f9f36c74609764336ffa620bf57a6659191f990410c25"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_label_delay_by_date.csv",
+      "bytes": 482,
+      "sha256": "10afd0fa18567d058aef356778c2fb7a07bc7a45275a586e5d1ebe670ad6ea8c"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_label_delay_by_metric.csv",
+      "bytes": 1330,
+      "sha256": "b693cd895e3eb01069df6402baf1976a73b1a352a0092898f4b923516fac98fb"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_dr_value.csv",
+      "bytes": 1029,
+      "sha256": "0a7807e4156c74523b12b3895cd99ab0645b78f16a111714f2baf5b65bad1008"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_selective_effect.csv",
+      "bytes": 676,
+      "sha256": "679c21d3ac0465b24f160c0238545594634c063352f45bdbc7b508a752a595d0"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_selective_calibration.csv",
+      "bytes": 1552,
+      "sha256": "92f7c3ccbca02d504f20df5cdc0f41ae1c9cdb013a0a4143dc381f89bcc0a7bd"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_drift_guardrail.csv",
+      "bytes": 1359,
+      "sha256": "f38bae26a7cb320b4cb2b27e2c4611420f2c6bcb4385b8bab80b6ce0efbeb80f"
+    },
+    {
+      "file": "outputs/tables/s8_oot_rehearsal_playbook.csv",
+      "bytes": 3098,
+      "sha256": "d1e8fa9e2f63af94d72cc512851c0188ac8971af1a8240d12219abfa4fc8bc6a"
+    },
+    {
+      "file": "outputs/figures/fig_s8_oot_rehearsal.png",
+      "bytes": 241489,
+      "sha256": "6a8ddbd74871f3c9e1dda6dd90344dc4ff693943ae165cfbba0ff44f57e9ceb7"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "doubleml": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "shap": "0.54.1",
+    "highspy": "1.16.0",
+    "pulp": "4.2.0",
+    "torch": "2.15.0",
+    "pyepo": "2.2.7",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "mode": "rehearsal",
+    "nhan": "THỬ (valid = tham chiếu, calib đóng vai OOT)",
+    "oot_vai": "calib",
+    "tham_chieu": [
+      "valid"
+    ],
+    "kho_nhan": [
+      "valid",
+      "calib"
+    ],
+    "model_version": "mu0:2d657ac0|cal:b72282a6|S:8120cbec|cate:cd332637",
+    "n_lat": 30,
+    "n_boot": 1000,
+    "runtime_s": 137
+  }
+}

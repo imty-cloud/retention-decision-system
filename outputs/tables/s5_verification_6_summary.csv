@@ -1,0 +1,12 @@
+,gia_tri
+so_nghiem_kha_thi,418.0
+tong_so_nghiem,4096.0
+max_lech_z_sao,2.842170943040401e-14
+max_lech_spo,2.842170943040401e-14
+max_lech_spo_plus,5.684341886080802e-14
+ty_le_spo_plus_ge_spo,1.0
+min_spo,-1.4210854715202004e-14
+ty_le_dao_ham_khop_sai_phan,1.0
+ty_le_giam_khi_di_nguoc_subgradient (đúng dấu),1.0
+ty_le_giam_khi_dung_dau_sai,0.0
+spo_plus_tai_chat_bang_c,0.0

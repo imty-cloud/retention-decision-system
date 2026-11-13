@@ -1,0 +1,156 @@
+{
+  "stage": "s4",
+  "created_utc": "2026-11-12T04:35:11+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s4_propensity_compare.csv",
+      "bytes": 1577,
+      "sha256": "f72bee8a9e83ee27b696ca29291c0b5aca7437d24ace2ef1a1e940fae07cdec2"
+    },
+    {
+      "file": "outputs/figures/fig_s4_propensity_overlap.png",
+      "bytes": 230667,
+      "sha256": "91662cc24e338e49caca814c08b01c6f98aa9b013af6a53b28c36d5b73f9cd2f"
+    },
+    {
+      "file": "outputs/tables/s4_ate.csv",
+      "bytes": 6842,
+      "sha256": "79cf1c1b5071bb290d6509fef2e6344a45657b7855103adbde46fea7fdf97327"
+    },
+    {
+      "file": "outputs/tables/s4_ate_vs_truth.csv",
+      "bytes": 9058,
+      "sha256": "feb066921930039f9297f9c695aa6579c5ac2f6b45a146316169bd8b57e46fee"
+    },
+    {
+      "file": "outputs/figures/fig_s4_ate_forest.png",
+      "bytes": 131140,
+      "sha256": "07018c7c5835e31ae4cffe6b7b382469a3c03def219d8ac0c94f775cdd9318ea"
+    },
+    {
+      "file": "outputs/tables/s4_placebo.csv",
+      "bytes": 802,
+      "sha256": "e5a8393efe6143b338740e22911ede1689680d8075b408a6a031785b613d4d4c"
+    },
+    {
+      "file": "outputs/tables/s4_ate_stability.csv",
+      "bytes": 4636,
+      "sha256": "0a64aaf0754ae3b292545b118fa4572861332eb70e98cbd1d6fd492b86a11e95"
+    },
+    {
+      "file": "outputs/figures/fig_s4_ate_stability.png",
+      "bytes": 85292,
+      "sha256": "39104269ada2eaccc2d6ab9957c031a804d1147bc893300b9e039655c5ffa8b4"
+    },
+    {
+      "file": "outputs/tables/s4_qini.csv",
+      "bytes": 9753,
+      "sha256": "f19389eb09483f06fe51462a74551efc94a8b242e28174b20d9221207b3e9575"
+    },
+    {
+      "file": "outputs/figures/fig_s4_qini_curves.png",
+      "bytes": 339876,
+      "sha256": "d862e14347ee5952847e8d723e66647f941f4beb708891443e6c6128c26ee691"
+    },
+    {
+      "file": "outputs/tables/s4_cate_vs_truth.csv",
+      "bytes": 2738,
+      "sha256": "cfb6c5044ba1c4d7c5663841303ba1dbeaa1d6700e6df78ee8728eed8aba22da"
+    },
+    {
+      "file": "outputs/figures/fig_s4_cate_calibration_truth.png",
+      "bytes": 132107,
+      "sha256": "4ad8bdddc36b088f3e2c4793338ce20754aa0a758972f1b08e339f67c58a79e9"
+    },
+    {
+      "file": "outputs/tables/s4_cate_stability.csv",
+      "bytes": 316,
+      "sha256": "43375254e74206b21e02e46de17d34a6072805296fe8acc34112c84306aba667"
+    },
+    {
+      "file": "data/processed/pred_s4.parquet",
+      "bytes": 11819491,
+      "sha256": "6021cc8830bc7262b1959837c3a43b551afbf03a39c6c2d7f1f7064d11b3da03"
+    },
+    {
+      "file": "outputs/tables/s4_vhat_topk_random_arm.csv",
+      "bytes": 792,
+      "sha256": "e23a25668ccff67579ce565fd8b8ae13e4b825add2c591f38c489a6949a52909"
+    },
+    {
+      "file": "outputs/tables/s4_vhat_vs_truth.csv",
+      "bytes": 1061,
+      "sha256": "1213c94e88c1543094e37432d8be1c2e5d1ee9e3fc29d1941065273327e7c209"
+    },
+    {
+      "file": "models/s4_cate_bundle.joblib",
+      "bytes": 42817427,
+      "sha256": "cd332637802b8981210a03b602b3647b5863ecb2091dc7d986c210c29e1d79e3"
+    },
+    {
+      "file": "models/s4_propensity.joblib",
+      "bytes": 1228686,
+      "sha256": "3ee0c20937a54d327c030d42ed2e21b334d6a54ad16a87ad70920a45a65bbfef"
+    },
+    {
+      "file": "outputs/tables/s4_acceptance.csv",
+      "bytes": 364,
+      "sha256": "1399d9f24dfe4b1ad4a9bee607f8d22690d96446926fe71fb75af0a2bef7f76c"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "DoubleML": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "extra": {
+    "cate_learner": "CausalForestDML",
+    "selection_qini_valid": {
+      "CausalForestDML": 0.05508161878351864,
+      "DR-learner": 0.03614953195328915,
+      "T-learner": 0.04132351403770033,
+      "X-learner": 0.0402106565951967
+    },
+    "features": [
+      "recency_days",
+      "tenure_days",
+      "n_orders_all",
+      "value_all",
+      "n_orders_30",
+      "n_orders_90",
+      "n_orders_180",
+      "n_orders_365",
+      "value_30",
+      "value_90",
+      "value_180",
+      "value_365",
+      "aov_365",
+      "aov_all",
+      "units_per_order_365",
+      "lines_per_order_365",
+      "distinct_products_365",
+      "ipt_mean_days",
+      "ipt_std_days",
+      "is_one_time",
+      "overdue_ratio",
+      "n_cancels_365",
+      "cancel_value_365",
+      "cancel_rate_365",
+      "days_since_last_cancel",
+      "value_trend_90_365",
+      "is_uk",
+      "country"
+    ],
+    "n_clip_prob": 3,
+    "runtime_s": 433
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "stage": "s4b",
+  "created_utc": "2026-11-12T04:35:20+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s4_power_g3.csv",
+      "bytes": 7046,
+      "sha256": "900af6478c4b918edaf29e5ae40d2612eb11ff6450989c5d5452fafe1ee33f1c"
+    },
+    {
+      "file": "outputs/tables/s4_power_g3_summary.csv",
+      "bytes": 1227,
+      "sha256": "fb478a3e4c3bed77cdca29ffd65f69a275ff5a73f9395c59d4d3186a2c4b4ad6"
+    },
+    {
+      "file": "outputs/figures/fig_s4b_power_g3.png",
+      "bytes": 114398,
+      "sha256": "a6b841a543fa989d466ed9b7d48c0ddf2beed3434d155273ad72d8026bbbe0fd"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "learner": "CausalForestDML",
+    "random_arm_frac_per_pair": 0.1,
+    "pops": {
+      "locked toàn bộ": 12947,
+      "locked khách thường": 10942,
+      "locked entity-holdout": 2005
+    }
+  }
+}

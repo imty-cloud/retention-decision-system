@@ -1,0 +1,128 @@
+{
+  "stage": "s6",
+  "created_utc": "2026-11-12T08:56:11+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s6_main_comparison.csv",
+      "bytes": 6341,
+      "sha256": "ee28eff2b558a226da8738e5277ce3db7fb4ce0d91f86cf8b00ca45ae170f19f"
+    },
+    {
+      "file": "outputs/tables/s6_shadow_prices.csv",
+      "bytes": 838,
+      "sha256": "ab75ae3c567635a049854a6a96ac30d9b6ea899c1e78603063ccad17c66757d8"
+    },
+    {
+      "file": "outputs/tables/s6_main_summary.csv",
+      "bytes": 1211,
+      "sha256": "5e3680815bdc6561df96a83f6a8aaad8beef6004a2ba23a2ac0073feec43129d"
+    },
+    {
+      "file": "outputs/tables/s6_milp_vs_greedy_wins.csv",
+      "bytes": 383,
+      "sha256": "4da14889b640ff5568dbad21dda31c1a9cac15f17a9ec10d5c3aa53a57cbfcd9"
+    },
+    {
+      "file": "outputs/tables/s6_sensitivity_BK_instances.csv",
+      "bytes": 80632,
+      "sha256": "dd9704e41df4cef9afea80dad9dd1c809f0cce5405d8b3979cb0ea1226374d01"
+    },
+    {
+      "file": "outputs/tables/s6_sensitivity_BK.csv",
+      "bytes": 9914,
+      "sha256": "7c0b9a7dd9db941106e5acf9c8f38a47d3c411de9a396c3d66edfdd941acfecb"
+    },
+    {
+      "file": "outputs/tables/s6_sensitivity_margin_instances.csv",
+      "bytes": 42218,
+      "sha256": "fac54d19d2b66f0a453d203a2ff979253fa5f6778e51cb7eff8ce48c8e09cae3"
+    },
+    {
+      "file": "outputs/tables/s6_sensitivity_margin.csv",
+      "bytes": 5265,
+      "sha256": "0ac7572f35ed7e000954da9ad3e60d34281ad253e5fe1eccbc8fddbe7cad1d80"
+    },
+    {
+      "file": "outputs/tables/s6_scaling.csv",
+      "bytes": 3438,
+      "sha256": "fd71140b10ff599461bf860b681db05f3645d43dcc2b80a97ab96c18ef48557d"
+    },
+    {
+      "file": "outputs/tables/s6_calibration_discount_cost.csv",
+      "bytes": 4382,
+      "sha256": "9e799c0af4a5413349346c50fe932ff6cac5be8dc2950bb373403d252a6552db"
+    },
+    {
+      "file": "outputs/tables/s6_calibration_discount_cost_summary.csv",
+      "bytes": 842,
+      "sha256": "a6173065bdaf2249a67d96188ddae6533730d2975b5e69043b2139d6ca7e9180"
+    },
+    {
+      "file": "outputs/figures/fig_s6_main_comparison.png",
+      "bytes": 78684,
+      "sha256": "aa09d8db7ac8351b7c0c01f04b71c9928c10da4f8ada0576a89289bbcd990dda"
+    },
+    {
+      "file": "outputs/figures/fig_s6_sensitivity_BK.png",
+      "bytes": 146381,
+      "sha256": "b63fd1fa717b4b702a59cd4b5eef27f6f07c135f326c34114246cd234333591f"
+    },
+    {
+      "file": "outputs/figures/fig_s6_scaling.png",
+      "bytes": 76474,
+      "sha256": "921fbcb819240f8e5bab17cc069dbb375bc6b2aa3577c013200be25682c78359"
+    },
+    {
+      "file": "outputs/figures/fig_s6_sensitivity_margin.png",
+      "bytes": 151947,
+      "sha256": "6528624b469480e0053be207ec826371f59fe4bd86c75bf2cce931087e802097"
+    },
+    {
+      "file": "outputs/figures/fig_s6_calibration_discount_cost.png",
+      "bytes": 81952,
+      "sha256": "45e3c855cd619692a5aa62df0e02b62064dea2dc5ec125bc9d7921d4dafe529c"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "highspy": "1.16.0",
+    "PuLP": "4.2.0",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1"
+  },
+  "extra": {
+    "B_grid": [
+      2000,
+      4000,
+      8000,
+      16000,
+      32000
+    ],
+    "K_grid": [
+      30,
+      60,
+      120
+    ],
+    "m_grid": [
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ],
+    "n_grid": [
+      1000,
+      2000,
+      5000,
+      10000,
+      20000,
+      50000
+    ],
+    "time_limit": 60.0,
+    "gap": 0.001,
+    "runtime_s": 100
+  }
+}

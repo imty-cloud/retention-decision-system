@@ -1,0 +1,19 @@
+hang_muc,trang_thai,bang_chung
+Lock ghi TRƯỚC khi đọc locked,ĐẠT,tests/test_s8.py::test_lock_blocks_second_run (runner thấy lock đã tồn tại); tests/test_s8.py::test_guard_blocks_locked_and_oot_without_lock; src/s8_mlops.py::open_locked/acquire_lock (O_EXCL)
+Từ chối lần mở thứ 2 (kể cả khi lần 1 lỗi),ĐẠT,tests/test_s8.py::test_lock_blocks_second_run; tests/test_s8.py::test_lock_survives_failed_run (có s8_locked_error.log)
+"Từ chối khi hash lệch (mã/mô hình/config/CLAUDE.md, thêm/xóa file, thiếu freeze, bản nháp)",ĐẠT,tests/test_s8.py::test_hash_mismatch_refuses[5 kiểu]; tests/test_s8.py::test_missing_or_draft_freeze_refuses
+"Diễn tập đường locked end-to-end (calib đổi nhãn, không đọc locked thật)",ĐẠT – không lộ lỗi riêng của đường locked,tests/test_s8.py::test_locked_path_rehearsal
+"Băm dữ liệu data/processed/*.parquet theo byte, kiểm trong verify_freeze",ĐẠT,tests/test_s8.py::test_data_byte_change_refuses_before_lock; tests/test_s8.py::test_data_new_file_refuses_and_s8_output_ignored; outputs/manifests/s8_freeze_draft_manifest.json (data_files: 14)
+Dry-run không chạm locked/oot (kể cả đáp án),ĐẠT,tests/test_s8.py::test_dry_run_does_not_touch_locked_oot; tests/test_s8.py::test_s8_reads_parquet_only_through_guard
+G1 định nghĩa khớp 6b,KHỚP (bộ kiểm tra lắp ghép – đã ghi vào 6b 'Làm rõ…' (d)),outputs/tables/s8_dryrun_g1_contract.csv; CLAUDE.md 6b
+G2 định nghĩa khớp 6b,"KHỚP (Current = μ0 + Platt GĐ2, dòng a0, ECE 15 bin equal-mass)",outputs/tables/s8_dryrun_g2_calibration.csv
+G3 định nghĩa khớp 6b,"KHỚP (CausalForestDML, nhánh ngẫu nhiên, CI bootstrap cụm 95 %, Qini calib = s4 lệch 0)",outputs/tables/s8_dryrun_g3_qini.csv; s8_dryrun_consistency.csv
+G4 định nghĩa khớp 6b,"KHỚP (toàn t0, B/K không co, cộng dồn, hiện thực A; G4a 0.10×|legacy| chính/phụ; G4b trên MILP qua Router – 6b 'Làm rõ…' (a))",outputs/tables/s8_dryrun_g4_policy_value.csv; s8_dryrun_g4a_comparison.csv
+G5 định nghĩa khớp 6b,"KHỚP (quyết định GỬI THỰC TẾ của Current, audit_final của Router v2.1; kiểm toán = s7 lệch 0)",outputs/tables/s8_dryrun_g5_constraint_audit.csv
+G6 định nghĩa khớp 6b,"KHỚP (≥30 lượt/kỳ, P95 gộp; gồm khâu mã lý do – 6b 'Làm rõ…' (b))",outputs/tables/s8_dryrun_g6_latency_percentiles.csv
+G7 định nghĩa khớp 6b,"KHỚP (UK / non-UK, so sánh chính như G4a, phụ báo kèm)",outputs/tables/s8_dryrun_g7_segments.csv
+Freeze-draft khớp code cuối,ĐẠT,outputs/manifests/s8_freeze_draft_manifest.json
+requirements_lock.txt,ĐẠT (pip freeze),outputs/manifests/requirements_lock.txt
+Ma trận tương thích (ghi rõ Python 3.14.7),ĐẠT,outputs/tables/s8_compat_matrix.csv; extra.compat_matrix trong s8_freeze_draft_manifest.json
+Pytest toàn bộ,"ĐẠT – 64 passed, 0 failed",python -m pytest -q
+File khóa s8_locked_opened.lock chưa tồn tại,ĐẠT (chưa tồn tại),outputs/manifests/

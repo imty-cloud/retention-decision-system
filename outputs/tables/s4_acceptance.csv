@@ -1,0 +1,6 @@
+tieu_chi,gia_tri,dat
+CI DML-APOS (train) phủ ATE thật,6/6,True
+CI DML-IRM cặp (train) phủ ATE thật của tập con,6/6,True
+"Qini > 0 cho >= 2 hành động (CausalForestDML, nhánh ngẫu nhiên valid+calib)",3/3,True
+"Qini có CI 95% > 0 cho >= 2 hành động (chuẩn G3, CausalForestDML)",1/3,False
+Placebo: CI DML chứa 0 (6 phép thử),6/6,True

@@ -1,0 +1,9 @@
+bien_goc,kiem_dinh,p_value
+recency,ANOVA,0.7630833552417505
+history,ANOVA,0.6980355980623004
+mens,chi-bình-phương,0.6716638885721589
+womens,chi-bình-phương,0.7288693221012423
+newbie,chi-bình-phương,0.9338550966386445
+history_segment,chi-bình-phương,0.35799799671836985
+zip_code,chi-bình-phương,0.5794791381657298
+channel,chi-bình-phương,0.45803390781197906

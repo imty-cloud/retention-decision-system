@@ -1,0 +1,207 @@
+{
+  "stage": "s9",
+  "created_utc": "2026-11-12T04:45:17+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s9_data_sha256.csv",
+      "bytes": 189,
+      "sha256": "010bd23637a8a5f4baff31ec1884481345abda41f12c8fb1c7301c03e49149e6"
+    },
+    {
+      "file": "outputs/tables/s9_split_summary.csv",
+      "bytes": 225,
+      "sha256": "938d19a5418f96049041de40dc730609aaa90955c798971e3862d0fecfdaec35"
+    },
+    {
+      "file": "outputs/tables/s9_balance_smd.csv",
+      "bytes": 6639,
+      "sha256": "dacc430b653d3e4c69ff7e4ca8f9d7b29a0f4dee5370cc34b5acca7945c22491"
+    },
+    {
+      "file": "outputs/tables/s9_balance_tests.csv",
+      "bytes": 375,
+      "sha256": "2d412ab32f7fb20c7bf6d5376d9d91bb52b688365aa1da9f3f1665af10fc4da1"
+    },
+    {
+      "file": "outputs/figures/fig_s9_balance.png",
+      "bytes": 98175,
+      "sha256": "acd422760c6e2935a4acd490d8694043b984d30dd1467ff19618fbd00a57261b"
+    },
+    {
+      "file": "outputs/tables/s9_ate_rct.csv",
+      "bytes": 2844,
+      "sha256": "58d62891fc654810439abff434d6b26ddf47017ca8d97a20628e87e9d85cb70c"
+    },
+    {
+      "file": "outputs/figures/fig_s9_ate_forest.png",
+      "bytes": 81618,
+      "sha256": "3956d3b93d28075bdfa1f1cfd8ea85f037390d64f176d208039c3db5dd804920"
+    },
+    {
+      "file": "outputs/tables/s9_cv_grid.csv",
+      "bytes": 1755,
+      "sha256": "67fcc6bd9ce51e0ed5c487e907732e07f34b1f723726cf73dc36a096aa90f9c3"
+    },
+    {
+      "file": "outputs/tables/s9_qini_test.csv",
+      "bytes": 3015,
+      "sha256": "061974f382d65ec21de36d71aa043f0313e33d8c3a29f39800af326eb014048d"
+    },
+    {
+      "file": "outputs/figures/fig_s9_qini_curves.png",
+      "bytes": 333896,
+      "sha256": "b055e757ab875c160380c9fab83aa68a83ca149c0aa598dbb360a0b195acb04e"
+    },
+    {
+      "file": "outputs/figures/fig_s9_qini_ci.png",
+      "bytes": 78583,
+      "sha256": "83cc6c4b7993d6d7db84509ab1fb5429a153a3e8c720c7c2cc978e2804f9036a"
+    },
+    {
+      "file": "outputs/tables/s9_cate_deciles_test.csv",
+      "bytes": 3233,
+      "sha256": "4c4bf4d6ebb7a27c27786e9fd2b816ae56c336e7ec9561e0edb86c7bd84a0ade"
+    },
+    {
+      "file": "outputs/figures/fig_s9_cate_deciles.png",
+      "bytes": 168574,
+      "sha256": "805e98effa23ff9dd3f945920b6a982ad559543895a11085ed015c084c0ff19f"
+    },
+    {
+      "file": "outputs/tables/s9_policy_value_test.csv",
+      "bytes": 2555,
+      "sha256": "2d0b438a0a995674ddb17f8aeb90046625ecff02199aee365d01230065a2be36"
+    },
+    {
+      "file": "outputs/tables/s9_policy_margin_sensitivity.csv",
+      "bytes": 1722,
+      "sha256": "9c0834327be6f6caba04f2beac77ed0a9c8e087bf4c829fe6a13b9a5b474b027"
+    },
+    {
+      "file": "outputs/tables/s9_milp_vs_greedy.csv",
+      "bytes": 410,
+      "sha256": "04a09af367e6328b75935a1978f96de8f7a7f39f14ab39602d94ab8829fc1124"
+    },
+    {
+      "file": "outputs/figures/fig_s9_policy_value.png",
+      "bytes": 47740,
+      "sha256": "dc3ebb68592add4b6788df14dee7d92427e92b2a541ebc135ab83773e01b4f08"
+    },
+    {
+      "file": "outputs/figures/fig_s9_margin_sensitivity.png",
+      "bytes": 76375,
+      "sha256": "4b822e2bb6684dcf06ba31be67b2516f527d32277a740cd1b0c18c7472e0cfda"
+    },
+    {
+      "file": "outputs/tables/s9_acceptance.csv",
+      "bytes": 461,
+      "sha256": "15ce5134de0d6e9d3410f89c65a4f2b34f359936df557f265f44fbfe84045eb8"
+    },
+    {
+      "file": "data/raw/hillstrom/hillstorm_no_indices.csv.gz",
+      "bytes": 443070,
+      "sha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f"
+    },
+    {
+      "file": "outputs/tables/s9_qini_visit_test.csv",
+      "bytes": 1129,
+      "sha256": "3615771a3845e05721361d134762e1c47947e9ef64d131691d49711c6953ded7"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "econml": "0.17.0",
+    "lightgbm": "4.7.0",
+    "scikit-uplift": "0.5.1",
+    "PuLP": "4.2.0",
+    "highspy": "1.16.0",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1"
+  },
+  "extra": {
+    "hillstrom": {
+      "raw_dir": "data/raw/hillstrom",
+      "seed": 42,
+      "test_size": 0.3,
+      "propensity": 0.3333333333333333,
+      "arms": {
+        "a0": "No E-Mail",
+        "a1": "Mens E-Mail",
+        "a2": "Womens E-Mail"
+      },
+      "arm_vi": {
+        "a0": "Không gửi",
+        "a1": "Email nam",
+        "a2": "Email nữ"
+      },
+      "outcomes": [
+        "conversion",
+        "visit",
+        "spend"
+      ],
+      "primary": "conversion",
+      "value_outcome": "spend",
+      "margin": 0.3,
+      "margin_sens": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "email_cost": 0.1,
+      "max_send_share": 0.3,
+      "cv_folds": 5,
+      "n_boot_qini": 300,
+      "n_boot_policy": 1000,
+      "n_random_policies": 200,
+      "n_random_score": 200,
+      "n_threads": 4,
+      "milp_time_limit": 60,
+      "milp_gap": 0.001,
+      "decile_groups": 10,
+      "grid": {
+        "T-learner": [
+          {
+            "num_leaves": 4
+          },
+          {
+            "num_leaves": 8
+          }
+        ],
+        "X-learner": [
+          {
+            "num_leaves": 4
+          },
+          {
+            "num_leaves": 8
+          }
+        ],
+        "DR-learner": [
+          {
+            "num_leaves": 4
+          },
+          {
+            "num_leaves": 8
+          }
+        ],
+        "CausalForestDML": [
+          {
+            "min_samples_leaf": 50
+          },
+          {
+            "min_samples_leaf": 200
+          }
+        ]
+      },
+      "cf_trees_cv": 200,
+      "cf_trees_final": 400
+    },
+    "hillstrom_sha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f",
+    "learner_thang": "CausalForestDML",
+    "thoi_gian_chay_s": 119.9,
+    "ghi_chu_visit": "bổ sung s9_qini_visit_test.csv (kết quả phụ)"
+  }
+}

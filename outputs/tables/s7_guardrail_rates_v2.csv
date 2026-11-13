@@ -1,0 +1,15 @@
+guardrail,n_dieu_kien_dung,n_de_xuat_voucher,n_kich_hoat_dau_tien,ty_le_kich_hoat_dau_tien,chinh_sach
+G1_opt_out,0,1788,0,0.0,MILP qua Router v2
+G2_cancel_rate,0,1788,0,0.0,MILP qua Router v2
+G3_frequency_cap,0,1788,0,0.0,MILP qua Router v2
+G4_margin_floor,0,1788,0,0.0,MILP qua Router v2
+H1_CI_tau_chua_0,517,1788,517,0.2891498881431767,MILP qua Router v2
+H2_S_khoang_rong,482,1788,302,0.16890380313199105,MILP qua Router v2
+H3_VIP_a2_a3,35,1788,0,0.0,MILP qua Router v2
+G1_opt_out,0,1491,0,0.0,Luật cũ qua Router v2
+G2_cancel_rate,0,1491,0,0.0,Luật cũ qua Router v2
+G3_frequency_cap,0,1491,0,0.0,Luật cũ qua Router v2
+G4_margin_floor,0,1491,0,0.0,Luật cũ qua Router v2
+H1_CI_tau_chua_0,943,1491,943,0.6324614352783366,Luật cũ qua Router v2
+H2_S_khoang_rong,479,1491,208,0.13950368879946345,Luật cũ qua Router v2
+H3_VIP_a2_a3,161,1491,0,0.0,Luật cũ qua Router v2

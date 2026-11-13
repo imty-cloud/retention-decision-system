@@ -1,0 +1,52 @@
+{
+  "stage": "s8_pilot",
+  "created_utc": "2026-11-12T14:23:48+00:00",
+  "files": [
+    {
+      "file": "outputs/tables/s8_pilot_g3.csv",
+      "bytes": 1458,
+      "sha256": "8f7fb1f456d03601d0985c020beafd388125cb66cfaf0eb09c0b295fec74f7bc"
+    },
+    {
+      "file": "outputs/tables/s8_pilot_dr.csv",
+      "bytes": 3367,
+      "sha256": "65e4f4910dd4bdc34eddb8d1227c154459e4e65cb0f538c354770de95c15885d"
+    },
+    {
+      "file": "outputs/tables/s8_pilot_dr_router_valid_calib.csv",
+      "bytes": 1178,
+      "sha256": "1081c7585ec51770c0b5b27de38eb2e4d8aa1c1844510322e9a80310a7119352"
+    },
+    {
+      "file": "outputs/figures/fig_s8_pilot_sample_size.png",
+      "bytes": 157842,
+      "sha256": "a4b915b62932c8d17cbe2f49245cf79a4b3705d0d5d086adced30e8485bdcc50"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0",
+    "doubleml": "0.11.4",
+    "scikit-uplift": "0.5.1",
+    "shap": "0.54.1",
+    "highspy": "1.16.0",
+    "pulp": "4.2.0",
+    "torch": "2.15.0",
+    "pyepo": "2.2.7",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "z_power80": 2.8015852181129683,
+    "N_locked": 12947,
+    "random_arm_pct": 0.2
+  }
+}

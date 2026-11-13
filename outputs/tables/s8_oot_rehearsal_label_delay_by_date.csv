@@ -1,0 +1,5 @@
+nhan,ngay_phat_lai,so_ky_da_quyet_dinh,so_ky_nhan_truong_thanh,so_dong_da_quyet_dinh,so_dong_nhan_truong_thanh,so_dong_a0_co_nhan,ty_le_dong_co_nhan
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",2011-04-25,1,0,3675,0,0,0.0
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",2011-05-09,2,0,7333,0,0,0.0
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",2011-05-23,3,0,10981,0,0,0.0
+"THỬ (valid = tham chiếu, calib đóng vai OOT)",2011-06-22,3,3,10981,10981,2819,1.0

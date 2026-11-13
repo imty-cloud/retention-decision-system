@@ -1,0 +1,8 @@
+guardrail,n_dieu_kien_dung,n_de_xuat_voucher,n_kich_hoat_dau_tien,ty_le_tren_de_xuat_dieu_kien_dung,ty_le_tren_de_xuat_kich_hoat_dau_tien
+G1_opt_out,105,1747,105,0.06010303377218088,0.06010303377218088
+G2_cancel_rate,0,1747,0,0.0,0.0
+G3_frequency_cap,469,1747,469,0.2684602175157413,0.2684602175157413
+G4_margin_floor,0,1747,0,0.0,0.0
+H1_CI_tau_chua_0,501,1747,393,0.2867773325701202,0.22495706926159129
+H2_S_khoang_rong,664,1747,280,0.3800801373783629,0.16027475672581568
+H3_VIP_a2_a3,48,1747,0,0.027475672581568404,0.0

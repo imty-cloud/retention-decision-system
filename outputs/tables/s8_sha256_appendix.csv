@@ -1,0 +1,52 @@
+nhom,file,bytes,sha256,ghi_chu
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/common.py,2336,72ab78c45744f7ed325fcba9b53e3532b6d0ee66477cc18a2d2bb84d2bac8f9e,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s1_data.py,29553,aae640ca989e70b1ba393d29c7aaad9834bd8d6614591abd3cc5935407efff4b,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s1b_intervention.py,10006,9412d7229e7bf6ad731b2459bdba52773c31179dbebb07a898a6c78743a1e791,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s2_predict.py,21657,a55f65b2eccd4e6349e1993c157fa3a0987d657082b5692c06fac1e0ff115cde,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s3_explain.py,20389,01e889f4d614fc35cdb5981def28424a63b7d88f0e19ad47ae695dde4c2fafbe,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s4_causal.py,40382,52c7501f68435fa796d4041a7c10a8ff1170b835207e1a442bad4bb9a46af83e,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s4b_power_g3.py,7110,ebac7d160b753898a822f14926d001b082d4676900abde6af23e59fad1657853,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s5_spo.py,51273,1ec95b7b6c1f67b264ec27c02782107e46576ee9880fc299f1e713acbf01410a,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s5b_dr_diagnostics.py,24178,6a66dab70eb46387e3f7d78f26c48ffcc303dd6121edabd73b3f090f35b0a016,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s6_milp.py,38194,a8567d3106f5c4e5fee4c6b51a6560d0a80e48f047e46750963ae42f81406577,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s7_router.py,97398,9758449e6423f0942acb01def79d0907f30dc38b78be318bacd313946946a9ff,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s8_mlops.py,51290,e73f69d5e92a87ad39d7fe235c14f7e8f4cbf1d712783eeaf2b823929172f542,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s8b_oot.py,48695,3e8343405f4367cfbb756975650bf88a13f014191f3f9eb410a1204acca858f4,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),src/s9_external_hillstrom.py,40160,aa3d2e13b01ff260392c69eb35f7d1611a67dadcecfe7eb1c68255abc920cf0e,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),configs/config.yaml,6364,c2241f24340fd18b102f9d885342f3abe3daf4f0737b39862155c40b9dd50988,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s2_basket_model.joblib,359354,8120cbecb268d63a4aa65264dd1cc014ed90bc91a31171599789d4358dc3f49f,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s2_calibrator.joblib,2737,b72282a6965f5a6336bd7518436f3f328214747e381286f90ff887cf1b9a10ae,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s2_mu0_candidates.joblib,250418,352b40c719b4d139a88f6a4c0bcd0ccccbd4785d160d528f768e19550205de99,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s2_mu0_model.joblib,244744,2d657ac073c694a4a3660bed97671a05a38ebc7f322a5f245adc0ce47937a9ba,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s4_cate_bundle.joblib,42817427,cd332637802b8981210a03b602b3647b5863ecb2091dc7d986c210c29e1d79e3,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s4_propensity.joblib,1228686,3ee0c20937a54d327c030d42ed2e21b334d6a54ad16a87ad70920a45a65bbfef,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_pto_lgbm.joblib,332042,68fc2174daa99f8f1109881b82fe399e15c6efd6f005b4d99208bc59faad0740,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_pto_lgbm_mo_rong.joblib,49633,db91ec1d5cffbe40b37be3f57138e417b64686345995fdffc2859da0cd0c3a5a,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_pto_linear.joblib,3162,9bf9fc0ff879803ee7b8171f40032128f4ef6b74e164d78c98134dfdd2eacd52,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_pto_linear_mo_rong.joblib,3162,03c648360cabb3e3f5f5ad602a90ed546ed5eec324ba6cb31cc1e3023fd36f15,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_spo_linear.joblib,8379,8cb38ecf70ce316271c3d8e09deef7ffed335dcdf84853ba985ca1aae40de43d,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),models/s5_spo_linear_mo_rong.joblib,8379,ea8bb05155775a030fc7827113da869520c03df3f8ccb57efd87d4fcaf0fb4ae,
+mã/mô hình/config/CLAUDE.md (trong phạm vi băm),CLAUDE.md,29405,49bb7b63ff5baf2351cdf4af85dafae378be7533362383d4342d24b8d295fbe8,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/cancels.parquet,150068,4a92e1026ceb3532cc7fb3c39babf59765ed6eb1c5c968cc16021c01120f1ad3,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/decisions_s7.parquet,2002238,402800e73eedca11946e61e5da7df7f6ce0ae47077439b57a6fa209601a902cb,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/decisions_s7_v2.parquet,2067080,eb0155afed5dd34bf4e3d56e8388a57d2934d6bd5a239200a91c5c582a106ea7,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/decisions_s7_v21.parquet,2066931,b0c66d8a80ec69e64c186d993b1f9ffb2662d87816798a54ce8685cbcb44c763,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/decisions_s7_v21_legacy.parquet,2068455,279eed5ca0e4f730f64a03dbe941e4fe6f6a11f4a4f43341b61a65d202b414b3,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/decisions_s7_v2_legacy.parquet,2066189,feea758a4c39c3645641d614ef31c8382d9f03b0e8083d9d5752976a2c41111d,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/logged.parquet,17900129,778f5c88ca2e4537b1e30a0b9579043decc4120fc4fc354eb0de347eda7cb8e8,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/oracle.parquet,8469157,8c8d77ca1ebd63ddbaa7cc72a766f59c8953fb05c52d6f6a33af9df7899bdb54,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/oracle_oot_drift.parquet,1205953,277a5cd77488a2093071190a8ac26d5fc16d6075d3f078595220abb4942a9d83,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/orders.parquet,944551,874e41f3bca7fec172f728e2095c4674ba30d6b5e071f9ed71c513a50c4db025,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/pred_s2.parquet,8694750,be4095a16b9ea5236c5d52281c18900d81f0fb5d1b0ef8e258082106d200461e,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/pred_s4.parquet,11819491,6021cc8830bc7262b1959837c3a43b551afbf03a39c6c2d7f1f7064d11b3da03,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/reasons_s3.parquet,1528504,28ee5ab5868585d8189b01111d4914506f385c8b9baefc77c8da50743b087a63,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/snapshots.parquet,9765085,f43f07f8e246a10a19a04b5c96b6ea7b0799e2e3889e5e46d50e51eebed8d2e7,
+"dữ liệu data/processed (trong phạm vi băm, băm theo byte)",data/processed/transactions_clean.parquet,6576238,e4ff33bce309e057885c6302d9ad7ca31ab341b6f2bffa50c4dbf5d0cee1742f,
+TỔNG HỢP,(aggregate) mã/mô hình/config/CLAUDE.md,,1d078744042c80b978eaae0e49b8e63c81bae18809ae090ad6734f13312ebd1a,"s8_freeze_manifest.json, tạo lúc 2026-11-12T14:31:07+00:00; = SHA-256 của các dòng 'file:sha256' nối bằng \n"
+TỔNG HỢP,(aggregate) dữ liệu data/processed,,ccdbd1c36585d5cd134cd0458261019d62f4870cdcba3a331c289b6ec6627ac5,cùng cách tính; loại decisions_s8_* (đầu ra của chính s8)
+FILE KHÓA,outputs/manifests/s8_locked_opened.lock,278,3e7ec8ea22581c74ab1a0fa59a3af95cc3710f779b816a7af5e921838bda61ba,"NỘI DUNG: {""freeze_aggregate_sha256"": ""1d078744042c80b978eaae0e49b8e63c81bae18809ae090ad6734f13312ebd1a"", ""ghi_chu"": ""Ghi TRƯỚC khi đọc locked; không xóa. Không chỉnh mô hình sau khi xem kết quả locked."", ""opened_utc"": ""2026-11-12T14:40:19+00:00"", ""pid"": 14713}. freeze_aggregate_sha256 trong khóa = hash tổng hợp mã ở trên"
+dữ liệu thô (NGOÀI phạm vi băm; s1_manifest.json),data/raw/online_retail_ii.zip,45622418,572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb,Online Retail II – CC BY 4.0
+dữ liệu thô (NGOÀI phạm vi băm; s1_manifest.json),data/raw/online_retail_II.xlsx,45622278,bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980,Online Retail II – CC BY 4.0
+dữ liệu thô (NGOÀI phạm vi băm; s9_data_sha256.csv),data/raw/hillstrom/hillstorm_no_indices.csv.gz,443070,bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f,"Hillstrom – KHÔNG nêu giấy phép; không đưa vào repo, tải bằng sklift.datasets.fetch_hillstrom"
+SỬA SAU ĐÓNG BĂNG (tests/ nằm NGOÀI phạm vi băm),tests/test_s8b.py,12672,68d17a8dc973ad592d6c22f20991a3d4b2401482f1bbbc845505522e66ad5b99,"sửa lần cuối 2026-11-12 14:39:52 UTC – thêm test_real_oot_path_preflight (diễn tập nhánh OOT 'real' bằng dữ liệu thay thế, TRƯỚC khi mở locked; freeze 14:31:07 UTC, khóa locked 14:40:19 UTC). Không đổi mã trong src/."
+SỬA SAU ĐÓNG BĂNG (tests/ nằm NGOÀI phạm vi băm),tests/test_s8.py,12299,aa9180a105fa02001addc1639e6e9ddce9b8da6f48a077288b2914d952b2ee17,sửa lần cuối 2026-11-12 14:54:40 UTC – sau khi mở locked: hai test từng khẳng định 'khóa chưa tồn tại' đổi thành 'khóa và s8_locked_gates.csv THẬT không bị thay đổi'. Không đổi mã trong src/.

@@ -1,0 +1,6 @@
+phuong_phap,tham_so,luoi_goc,gia_tri_chon_valid,vi_tri,them_vao
+PTO tuyến tính,alpha,"[1, 10, 100, 1000.0, 10000.0, 100000.0]",100000.0,biên trên,"[300000.0, 1000000.0]"
+PTO LightGBM,num_leaves,"[4, 8, 16]",4,biên dưới,"[(2, 200)]"
+PTO LightGBM,n_estimators,"[200, 300]",200,biên dưới,"[(4, 20), (4, 67)]"
+SPO+,lr,"[0.003, 0.01, 0.03]","{42: 0.03, 43: 0.03, 44: 0.03, 45: 0.03, 46: 0.03}",biên trên,"[0.09, 0.3]"
+SPO+,epoch tối đa,1..15,"{42: 15, 43: 15, 44: 13, 45: 14, 46: 15}",biên trên,"tối đa 45 epoch, early stopping patience 3"

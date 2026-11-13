@@ -1,0 +1,9 @@
+nhan,chi_so,can_nhan,tre_toi_thieu_ngay,tre_thuc_te_TB_ngay,tre_thuc_te_max_ngay,ghi_chu
+VẬN HÀNH (OOT thật),Độ trễ xử lý P95 (G6),False,0,0.0,0,đo ngay tại t0
+VẬN HÀNH (OOT thật),PSI đặc trưng / điểm số,False,0,0.0,0,đặc trưng có tại cutoff = t0 − 1 ngày
+VẬN HÀNH (OOT thật),Action TVD,False,0,0.0,0,có ngay sau khi Router ra quyết định
+VẬN HÀNH (OOT thật),Vi phạm ràng buộc (G5),False,0,0.0,0,kiểm toán ngay trên bản ghi quyết định
+VẬN HÀNH (OOT thật),"Brier / ECE (Current, Challenger)",True,30,43.2,58,"chờ hết cửa sổ [t0, t0+30) rồi tới ngày phát lại kế tiếp (lịch 2 tuần)"
+VẬN HÀNH (OOT thật),Khớp lại Challenger (Platt),True,30,43.2,58,chỉ dùng kỳ đã trưởng thành ⇒ áp cho kỳ sau với độ trễ ≥ 30 ngày
+VẬN HÀNH (OOT thật),Giá trị thực hiện DR / đối chứng,True,30,43.2,58,cần lợi nhuận trong cửa sổ kết quả
+VẬN HÀNH (OOT thật),Khuyết nhãn có chọn lọc (độ chệch),True,30,43.2,58,cần Y(0) của nhóm đối chứng

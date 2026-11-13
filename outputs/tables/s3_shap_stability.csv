@@ -1,0 +1,16 @@
+cap,spearman
+mo_hinh_goc vs bootstrap_1,0.9390433815350391
+mo_hinh_goc vs bootstrap_2,0.9135610246763266
+mo_hinh_goc vs bootstrap_3,0.8610524027027237
+mo_hinh_goc vs bootstrap_4,0.9229057794343406
+mo_hinh_goc vs bootstrap_5,0.9203205897326187
+bootstrap_1 vs bootstrap_2,0.89843142173478
+bootstrap_1 vs bootstrap_3,0.912671048032706
+bootstrap_1 vs bootstrap_4,0.9402603239849381
+bootstrap_1 vs bootstrap_5,0.9038505235560252
+bootstrap_2 vs bootstrap_3,0.7983978638184247
+bootstrap_2 vs bootstrap_4,0.8967512238540277
+bootstrap_2 vs bootstrap_5,0.8393990451196662
+bootstrap_3 vs bootstrap_4,0.8535825545171342
+bootstrap_3 vs bootstrap_5,0.8202560279146036
+bootstrap_4 vs bootstrap_5,0.9173066732798049

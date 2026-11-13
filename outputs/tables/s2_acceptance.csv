@@ -1,0 +1,4 @@
+tieu_chi,gia_tri,dat
+ECE sau hiệu chỉnh <= 0.03 (valid),0.04742096904224387,False
+Brier sau <= trước (valid),-0.019771086380745775,True
+"Coverage conformal Ŝ trong [0.85,0.95] (valid)",0.8822243049047173,True

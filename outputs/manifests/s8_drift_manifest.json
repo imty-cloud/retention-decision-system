@@ -1,0 +1,32 @@
+{
+  "stage": "s8_drift",
+  "created_utc": "2026-11-12T14:22:42+00:00",
+  "files": [
+    {
+      "file": "data/processed/oracle_oot_drift.parquet",
+      "bytes": 1205953,
+      "sha256": "277a5cd77488a2093071190a8ac26d5fc16d6075d3f078595220abb4942a9d83"
+    },
+    {
+      "file": "outputs/tables/s8_drift_generation_hashes.csv",
+      "bytes": 2655,
+      "sha256": "e1d0eadff3e1552dabf7c25a5f60bfe8677faa39d2d92282c40b24764da63de7"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.1",
+    "pandera": "0.36.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pyyaml": "6.0.3"
+  },
+  "extra": {
+    "oot_persuasion_scale": 0.6,
+    "ngoai_oot_giong_het": true,
+    "chi_ghi_dong_split": "oot"
+  }
+}

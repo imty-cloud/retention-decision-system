@@ -1,0 +1,31 @@
+dac_trung,ma_ly_do,nhan_nghiep_vu,nhom
+recency_days,RECENCY_DAYS,Số ngày từ đơn gần nhất,RFM
+tenure_days,TENURE_DAYS,Thâm niên khách,RFM
+n_orders_all,N_ORDERS_ALL,Số đơn toàn lịch sử,RFM
+value_all,VALUE_ALL,Doanh số toàn lịch sử,RFM
+n_orders_30,N_ORDERS_30,Số đơn 30 ngày,RFM
+n_orders_90,N_ORDERS_90,Số đơn 90 ngày,RFM
+n_orders_180,N_ORDERS_180,Số đơn 180 ngày,RFM
+n_orders_365,N_ORDERS_365,Số đơn 365 ngày,RFM
+value_30,VALUE_30,Doanh số 30 ngày,RFM
+value_90,VALUE_90,Doanh số 90 ngày,RFM
+value_180,VALUE_180,Doanh số 180 ngày,RFM
+value_365,VALUE_365,Doanh số 365 ngày,RFM
+aov_365,AOV_365,Giá trị đơn TB 365 ngày,RFM
+aov_all,AOV_ALL,Giá trị đơn TB toàn lịch sử,RFM
+units_per_order_365,UNITS_PER_ORDER_365,Số lượng hàng / đơn,RFM
+lines_per_order_365,LINES_PER_ORDER_365,Số dòng hàng / đơn,RFM
+distinct_products_365,DISTINCT_PRODUCTS_365,Số mã hàng đã mua,RFM
+ipt_mean_days,IPT_MEAN_DAYS,Chu kỳ mua TB,Nhịp mua
+ipt_std_days,IPT_STD_DAYS,Độ lệch chu kỳ mua,Nhịp mua
+is_one_time,IS_ONE_TIME,Khách mua một lần,RFM
+overdue_ratio,OVERDUE_RATIO,Mức quá chu kỳ mua,Nhịp mua
+n_cancels_365,N_CANCELS_365,Số hóa đơn hủy 365 ngày,Hủy đơn
+cancel_value_365,CANCEL_VALUE_365,Giá trị hủy 365 ngày,Hủy đơn
+cancel_rate_365,CANCEL_RATE_365,Tỷ lệ hủy 365 ngày,Hủy đơn
+days_since_last_cancel,DAYS_SINCE_LAST_CANCEL,Ngày từ lần hủy gần nhất,Hủy đơn
+value_trend_90_365,VALUE_TREND_90_365,Xu hướng doanh số 90/365 ngày,RFM
+is_uk,IS_UK,Khách ở Anh,Quốc gia
+t0_month,T0_MONTH,Tháng của kỳ quyết định,Lịch
+days_to_xmas,DAYS_TO_XMAS,Số ngày đến Giáng sinh,Lịch
+country,COUNTRY,Quốc gia,Quốc gia

@@ -1,0 +1,99 @@
+chinh_sach,split,t0,guardrail,n_dieu_kien_dung,n_de_xuat_voucher,n_kich_hoat_dau_tien
+MILP,valid,2011-01-31,G1_opt_out,0,246,0
+MILP,valid,2011-01-31,G2_cancel_rate,0,246,0
+MILP,valid,2011-01-31,G3_frequency_cap,0,246,0
+MILP,valid,2011-01-31,G4_margin_floor,0,246,0
+MILP,valid,2011-01-31,H1_CI_tau_chua_0,70,246,70
+MILP,valid,2011-01-31,H2_S_khoang_rong,107,246,70
+MILP,valid,2011-01-31,H3_VIP_a2_a3,9,246,0
+Luật cũ,valid,2011-01-31,G1_opt_out,0,213,0
+Luật cũ,valid,2011-01-31,G2_cancel_rate,0,213,0
+Luật cũ,valid,2011-01-31,G3_frequency_cap,0,213,0
+Luật cũ,valid,2011-01-31,G4_margin_floor,0,213,0
+Luật cũ,valid,2011-01-31,H1_CI_tau_chua_0,119,213,119
+Luật cũ,valid,2011-01-31,H2_S_khoang_rong,75,213,38
+Luật cũ,valid,2011-01-31,H3_VIP_a2_a3,20,213,0
+MILP,valid,2011-02-14,G1_opt_out,0,264,0
+MILP,valid,2011-02-14,G2_cancel_rate,0,264,0
+MILP,valid,2011-02-14,G3_frequency_cap,0,264,0
+MILP,valid,2011-02-14,G4_margin_floor,0,264,0
+MILP,valid,2011-02-14,H1_CI_tau_chua_0,69,264,69
+MILP,valid,2011-02-14,H2_S_khoang_rong,49,264,23
+MILP,valid,2011-02-14,H3_VIP_a2_a3,3,264,0
+Luật cũ,valid,2011-02-14,G1_opt_out,0,213,0
+Luật cũ,valid,2011-02-14,G2_cancel_rate,0,213,0
+Luật cũ,valid,2011-02-14,G3_frequency_cap,0,213,0
+Luật cũ,valid,2011-02-14,G4_margin_floor,0,213,0
+Luật cũ,valid,2011-02-14,H1_CI_tau_chua_0,152,213,152
+Luật cũ,valid,2011-02-14,H2_S_khoang_rong,59,213,21
+Luật cũ,valid,2011-02-14,H3_VIP_a2_a3,24,213,0
+MILP,valid,2011-02-28,G1_opt_out,0,249,0
+MILP,valid,2011-02-28,G2_cancel_rate,0,249,0
+MILP,valid,2011-02-28,G3_frequency_cap,0,249,0
+MILP,valid,2011-02-28,G4_margin_floor,0,249,0
+MILP,valid,2011-02-28,H1_CI_tau_chua_0,72,249,72
+MILP,valid,2011-02-28,H2_S_khoang_rong,82,249,56
+MILP,valid,2011-02-28,H3_VIP_a2_a3,7,249,0
+Luật cũ,valid,2011-02-28,G1_opt_out,0,213,0
+Luật cũ,valid,2011-02-28,G2_cancel_rate,0,213,0
+Luật cũ,valid,2011-02-28,G3_frequency_cap,0,213,0
+Luật cũ,valid,2011-02-28,G4_margin_floor,0,213,0
+Luật cũ,valid,2011-02-28,H1_CI_tau_chua_0,138,213,138
+Luật cũ,valid,2011-02-28,H2_S_khoang_rong,74,213,36
+Luật cũ,valid,2011-02-28,H3_VIP_a2_a3,22,213,0
+MILP,valid,2011-03-14,G1_opt_out,0,262,0
+MILP,valid,2011-03-14,G2_cancel_rate,0,262,0
+MILP,valid,2011-03-14,G3_frequency_cap,0,262,0
+MILP,valid,2011-03-14,G4_margin_floor,0,262,0
+MILP,valid,2011-03-14,H1_CI_tau_chua_0,71,262,71
+MILP,valid,2011-03-14,H2_S_khoang_rong,51,262,28
+MILP,valid,2011-03-14,H3_VIP_a2_a3,3,262,0
+Luật cũ,valid,2011-03-14,G1_opt_out,0,213,0
+Luật cũ,valid,2011-03-14,G2_cancel_rate,0,213,0
+Luật cũ,valid,2011-03-14,G3_frequency_cap,0,213,0
+Luật cũ,valid,2011-03-14,G4_margin_floor,0,213,0
+Luật cũ,valid,2011-03-14,H1_CI_tau_chua_0,142,213,142
+Luật cũ,valid,2011-03-14,H2_S_khoang_rong,57,213,22
+Luật cũ,valid,2011-03-14,H3_VIP_a2_a3,24,213,0
+MILP,calib,2011-04-25,G1_opt_out,0,254,0
+MILP,calib,2011-04-25,G2_cancel_rate,0,254,0
+MILP,calib,2011-04-25,G3_frequency_cap,0,254,0
+MILP,calib,2011-04-25,G4_margin_floor,0,254,0
+MILP,calib,2011-04-25,H1_CI_tau_chua_0,71,254,71
+MILP,calib,2011-04-25,H2_S_khoang_rong,81,254,53
+MILP,calib,2011-04-25,H3_VIP_a2_a3,5,254,0
+Luật cũ,calib,2011-04-25,G1_opt_out,0,213,0
+Luật cũ,calib,2011-04-25,G2_cancel_rate,0,213,0
+Luật cũ,calib,2011-04-25,G3_frequency_cap,0,213,0
+Luật cũ,calib,2011-04-25,G4_margin_floor,0,213,0
+Luật cũ,calib,2011-04-25,H1_CI_tau_chua_0,114,213,114
+Luật cũ,calib,2011-04-25,H2_S_khoang_rong,78,213,37
+Luật cũ,calib,2011-04-25,H3_VIP_a2_a3,22,213,0
+MILP,calib,2011-05-09,G1_opt_out,0,261,0
+MILP,calib,2011-05-09,G2_cancel_rate,0,261,0
+MILP,calib,2011-05-09,G3_frequency_cap,0,261,0
+MILP,calib,2011-05-09,G4_margin_floor,0,261,0
+MILP,calib,2011-05-09,H1_CI_tau_chua_0,73,261,73
+MILP,calib,2011-05-09,H2_S_khoang_rong,33,261,21
+MILP,calib,2011-05-09,H3_VIP_a2_a3,2,261,0
+Luật cũ,calib,2011-05-09,G1_opt_out,0,213,0
+Luật cũ,calib,2011-05-09,G2_cancel_rate,0,213,0
+Luật cũ,calib,2011-05-09,G3_frequency_cap,0,213,0
+Luật cũ,calib,2011-05-09,G4_margin_floor,0,213,0
+Luật cũ,calib,2011-05-09,H1_CI_tau_chua_0,151,213,151
+Luật cũ,calib,2011-05-09,H2_S_khoang_rong,57,213,14
+Luật cũ,calib,2011-05-09,H3_VIP_a2_a3,25,213,0
+MILP,calib,2011-05-23,G1_opt_out,0,252,0
+MILP,calib,2011-05-23,G2_cancel_rate,0,252,0
+MILP,calib,2011-05-23,G3_frequency_cap,0,252,0
+MILP,calib,2011-05-23,G4_margin_floor,0,252,0
+MILP,calib,2011-05-23,H1_CI_tau_chua_0,91,252,91
+MILP,calib,2011-05-23,H2_S_khoang_rong,79,252,51
+MILP,calib,2011-05-23,H3_VIP_a2_a3,6,252,0
+Luật cũ,calib,2011-05-23,G1_opt_out,0,213,0
+Luật cũ,calib,2011-05-23,G2_cancel_rate,0,213,0
+Luật cũ,calib,2011-05-23,G3_frequency_cap,0,213,0
+Luật cũ,calib,2011-05-23,G4_margin_floor,0,213,0
+Luật cũ,calib,2011-05-23,H1_CI_tau_chua_0,127,213,127
+Luật cũ,calib,2011-05-23,H2_S_khoang_rong,79,213,40
+Luật cũ,calib,2011-05-23,H3_VIP_a2_a3,24,213,0

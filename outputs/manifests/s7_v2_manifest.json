@@ -1,0 +1,93 @@
+{
+  "stage": "s7_v2",
+  "created_utc": "2026-11-12T09:25:04+00:00",
+  "files": [
+    {
+      "file": "data/processed/decisions_s7_v2.parquet",
+      "bytes": 2067080,
+      "sha256": "eb0155afed5dd34bf4e3d56e8388a57d2934d6bd5a239200a91c5c582a106ea7"
+    },
+    {
+      "file": "data/processed/decisions_s7_v2_legacy.parquet",
+      "bytes": 2066189,
+      "sha256": "feea758a4c39c3645641d614ef31c8382d9f03b0e8083d9d5752976a2c41111d"
+    },
+    {
+      "file": "outputs/tables/s7_policy_value_by_period_v2.csv",
+      "bytes": 8140,
+      "sha256": "ad80f09744050eb7f6c51383531f8ec1e0a7362821e36c4115eefee1b89f1a1e"
+    },
+    {
+      "file": "outputs/tables/s7_constraint_audit_v2.csv",
+      "bytes": 2665,
+      "sha256": "aa297c739626dc2e038f48e83025d3936df92f176662f07196c42c2b983a72e8"
+    },
+    {
+      "file": "outputs/tables/s7_backfill_v2.csv",
+      "bytes": 1582,
+      "sha256": "a43007523f038992760c22415ad2202366df6c13d4ab2e910fd0bdb9ce2cf669"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_rates_by_period_v2.csv",
+      "bytes": 4882,
+      "sha256": "a15767fc7c8cde5aad9a0d00c248247e9abc8dd06651ecec10c9d2395df4b5c8"
+    },
+    {
+      "file": "outputs/tables/s7_policy_value_summary_v2.csv",
+      "bytes": 1232,
+      "sha256": "3a23fb2ef087f1bb2e99a2d33740385e95c6f60a72ef057526ba7c04c7b2cec1"
+    },
+    {
+      "file": "outputs/tables/s7_decision_flow_v2.csv",
+      "bytes": 678,
+      "sha256": "53a4811184b6fc323df517c72505fe243e60adfc1b4b14a813533d24b55fa83c"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_cost_v2.csv",
+      "bytes": 1584,
+      "sha256": "6e0e7e31d965a4800231b064bb498f3494eadf6910c473e0746e7149f691b2f7"
+    },
+    {
+      "file": "outputs/tables/s7_guardrail_rates_v2.csv",
+      "bytes": 885,
+      "sha256": "b213031b4979564def05771a54d35186f80eac9a2601a71b9f795913fe1e0758"
+    },
+    {
+      "file": "outputs/tables/s7_v1_vs_v2.csv",
+      "bytes": 1003,
+      "sha256": "38ecf905a6df19e9345f6de18bcbe4128b2b9814070100c7b734af4387e9f84b"
+    },
+    {
+      "file": "outputs/tables/s7_v1_vs_v2_constraints.csv",
+      "bytes": 170,
+      "sha256": "50f013f4306d9205797d4a407f2cfa896a90ddfbb1b377ca5269b998d5b7a34b"
+    },
+    {
+      "file": "outputs/tables/s7_idempotency_v2.csv",
+      "bytes": 102,
+      "sha256": "170772921bb194a027bcea5b19c02a712a940ed6bae20dc3eedba51883a73070"
+    },
+    {
+      "file": "outputs/tables/s7_latency_percentiles_v2.csv",
+      "bytes": 564,
+      "sha256": "20954b9955228effd9e08ed3382ac1ee33329fbb481f01551b8c17ca7543319f"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "pandera": "0.36.0",
+    "highspy": "1.16.0",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "econml": "0.17.0"
+  },
+  "extra": {
+    "policy_version": "router-v2.0",
+    "model_version": "mu0:2d657ac0|cal:b72282a6|S:8120cbec|cate:cd332637",
+    "s_wide_threshold": 1833.2785142895825,
+    "runtime_s": 160
+  }
+}

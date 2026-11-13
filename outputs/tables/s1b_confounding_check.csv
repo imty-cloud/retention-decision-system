@@ -1,0 +1,4 @@
+action,true_ATE_purchase,naive_diff_all_logged,diff_random_arm_only,naive_bias
+a1,0.0385,0.0209,0.0312,-0.0176
+a2,0.0795,0.0721,0.0638,-0.0075
+a3,0.0526,0.0802,0.0396,0.0276

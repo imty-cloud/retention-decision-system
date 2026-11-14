@@ -147,3 +147,6 @@ table.rds-table td.crit { min-width: 170px; }
   border-left: 5px solid var(--pass); font-size: 0.95rem; line-height: 1.6; color: #1F3A2B; }
 .rds-plain .k { font-family: var(--font-head) !important; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--pass); margin-bottom: 4px; }
+
+/* Thanh công cụ của Streamlit (Share, GitHub…) phải có nền đặc để không đè lên nội dung khi cuộn */
+[data-testid="stHeader"] { background: #F5F7FA !important; }

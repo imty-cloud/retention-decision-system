@@ -116,7 +116,7 @@ with tb:
         fig.add_scatter(x=pp.t0, y=pp.thuc_te, name="Thực tế", mode="lines+markers", line=dict(color=C.INK, width=3))
         fig.add_scatter(x=pp.t0, y=pp.du_bao_platt, name="Dự báo Platt", mode="lines+markers", line=dict(color=C.MILP))
         fig.add_scatter(x=pp.t0, y=pp.du_bao_tho, name="Dự báo thô", mode="lines+markers", line=dict(color=C.BASE, dash="dot"))
-        fig.update_layout(title="Dự báo so với thực tế theo kỳ t0", yaxis_title="tỷ lệ mua lại", yaxis_tickformat=".0%")
+        fig.update_layout(title="Dự báo so với thực tế theo kỳ t0", yaxis_title="tỷ lệ mua lại", yaxis_tickformat=".0%", xaxis_tickformat="%d/%m")
         C.show(fig, 380)
         explain("Khoảng cách giữa dự báo và thực tế ở từng kỳ cho thấy trôi theo mùa: bộ hiệu chỉnh khớp trên tháng 4–5 "
                 "không hợp với tháng 1–3 (valid) nhưng hợp với tháng 7–8 (locked).")

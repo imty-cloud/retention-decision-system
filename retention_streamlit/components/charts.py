@@ -21,7 +21,7 @@ pio.templates["rds"] = go.layout.Template(
         margin=dict(l=10, r=10, t=52, b=10),
         xaxis=dict(gridcolor="#F0F2F6", linecolor=LINE, zerolinecolor=LINE, ticks="outside", tickcolor=LINE),
         yaxis=dict(gridcolor="#F0F2F6", linecolor=LINE, zerolinecolor="#C9D0DB"),
-        legend=dict(orientation="h", yanchor="top", y=-0.16, xanchor="left", x=0, font=dict(size=12)),
+        legend=dict(orientation="h", yanchor="top", y=-0.30, xanchor="left", x=0, font=dict(size=12)),
         hoverlabel=dict(bgcolor="#FFFFFF", bordercolor=LINE, font=dict(color=INK)),
         separators=", ",
     ))
@@ -30,7 +30,7 @@ pio.templates.default = "rds"
 
 def show(fig: go.Figure, height: int = 360) -> None:
     fig.update_layout(height=height)
-    st.plotly_chart(fig, width="stretch", config={"displaylogo": False, "displayModeBar": "hover",
+    st.plotly_chart(fig, width="stretch", config={"displaylogo": False, "displayModeBar": False,
                                                             "toImageButtonOptions": {"scale": 2}})
 
 

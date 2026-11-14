@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from components import charts as C
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.kpi_cards import banner, gbp, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
 from services import milp_service as M
@@ -245,3 +245,9 @@ Giá bóng (LP relaxation): ngân sách £{R['duals']['pi_B']:.3f}/£1 mệnh gi
 """
     st.download_button("Xuất báo cáo kịch bản", report.encode("utf-8"), file_name="scenario_report.md",
                        mime="text/markdown", icon=":material/description:")
+    plain(
+        "Trang này cho phép thử các tình huống giả định: nếu ngân sách, số cuộc gọi hay biên lợi nhuận thay đổi thì hệ thống "
+        "sẽ chọn lại khách nào để gửi ưu đãi, và kết quả so với hai cách đơn giản hơn ra sao. Phần giá bóng cho biết nên tăng "
+        "ngân sách hay tăng số cuộc gọi trước thì có lợi hơn. Cần nhớ đây là mô phỏng trên dữ liệu đã có, giúp hình dung "
+        "cách hệ thống hoạt động, không phải kết quả đã triển khai thật."
+)

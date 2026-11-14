@@ -7,7 +7,7 @@ import streamlit as st
 from plotly.subplots import make_subplots
 
 from components import charts as C
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.kpi_cards import badge, gbp, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
 
@@ -93,6 +93,11 @@ with t1:
                ["code", "", "num", "num", "num", "num", "num", "num", ""])
     note("Challenger-2 (huấn luyện lại μ₀) là phương án phụ: bộ hiệu chỉnh khớp trên điểm trong mẫu nên không so sánh sạch, không hiển thị ở đây.")
 
+    plain(
+        "Sau khi đưa vào dùng, dự báo có thể lệch dần, nhất là vào mùa cao điểm khi hành vi mua thay đổi. Hai biểu đồ theo dõi mức "
+        "lệch theo thời gian. Khi đường đi vào vùng vàng hoặc đỏ, hệ thống phải cảnh báo hoặc chuyển sang phương án dự phòng."
+)
+
 with t2:
     loai = st.radio("Loại biến", ["đặc trưng", "điểm số"], horizontal=True, key="ml_loai")
     p = psi[(psi.loai == loai) & (psi.ky != "Gộp mọi kỳ")]
@@ -111,6 +116,11 @@ with t2:
             "<b>mùa vụ / cấu trúc thời gian</b> (số ngày đến Giáng sinh, tháng, thâm niên): PSI cao là tất yếu khi đi qua "
             "các tháng khác train, nên <b>không</b> tự động bị coi là trôi nghiêm trọng và không tính vào quy tắc báo động.")
     csv_button(p, f"psi_{loai}.csv", key="dl_psi")
+
+    plain(
+        "PSI cho biết dữ liệu mới khác dữ liệu lúc xây mô hình đến mức nào. Dưới 0,10 là ổn, từ 0,10 đến 0,25 cần chú ý, "
+        "từ 0,25 trở lên là báo động. Các yếu tố theo mùa vụ như gần Giáng sinh được loại khỏi báo động để tránh báo nhầm."
+)
 
 with t3:
     a, b = st.columns(2, gap="large")
@@ -183,3 +193,7 @@ with t5:
                 "Điều kiện rollback"], rows, ["", "", "num", "", "", "note", "note"])
     note(f"Trạng thái tính tại ngày phát lại {asof_ts.strftime('%d/%m/%Y')}. Ngưỡng lấy từ configs/config.yaml (mục monitoring).")
     csv_button(pb, "playbook.csv", key="dl_pb")
+    plain(
+        "Playbook là bảng hướng dẫn xử lý sự cố: khi có cảnh báo thì ai chịu trách nhiệm, làm gì, và khi nào phải quay về cách làm cũ. "
+        "Nhờ đó doanh nghiệp không phải xử lý bằng cảm tính khi sự cố xảy ra."
+)

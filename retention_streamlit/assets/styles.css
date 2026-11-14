@@ -141,3 +141,9 @@ table.rds-table td.crit { min-width: 170px; }
 [data-testid="stHeader"] { background: transparent; }
 .rds-title { line-height: 1.38 !important; padding-top: 0.12em; overflow: visible; }
 [data-testid="stMarkdownContainer"]:has(.rds-title) { overflow: visible; }
+
+/* Đoạn giải thích cho người không chuyên */
+.rds-plain { margin: 14px 0 6px; padding: 14px 18px; border-radius: 12px; background: #EEF6F1; border: 1px solid #CFE5D7;
+  border-left: 5px solid var(--pass); font-size: 0.95rem; line-height: 1.6; color: #1F3A2B; }
+.rds-plain .k { font-family: var(--font-head) !important; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--pass); margin-bottom: 4px; }

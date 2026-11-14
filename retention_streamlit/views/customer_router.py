@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from components import charts as C
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.kpi_cards import badge, gbp, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
 from services import milp_service as M
@@ -78,6 +78,14 @@ with tab_flow:
             "<b>trước</b> MILP dưới dạng miền khả thi, nên số bị chặn sau MILP bằng 0. Nhóm đối chứng được băm theo khách × kỳ "
             "ngay từ đầu (③) nhưng chỉ có tác dụng trên khách đã được đề xuất và qua HITL – đây là chi phí đo lường có chủ đích. "
             "HITL từ chối các ca có V̂ âm khi tính tại nửa đường tới cận dưới CI của τ̂.")
+
+    plain(
+        f"Có thể hình dung Router như một chiếc phễu lọc. Trong {vn(f['n'])} lượt khách theo từng kỳ, hệ thống chỉ đề xuất "
+        f"ưu đãi cho {vn(f['proposed'])} lượt. Trong số đó, {vn(f['hitl'])} lượt cần nhân viên duyệt tay "
+        f"({vn(f['approved'])} lượt được duyệt, {vn(f['rejected'])} lượt bị từ chối vì dự kiến không có lãi), và một phần nhỏ "
+        f"(khoảng 10 %) được cố tình giữ lại làm nhóm đối chứng để đo xem ưu đãi có tác dụng thật hay không. "
+        f"Cuối cùng có {vn(f['sent'])} lượt được gửi đi."
+)
 
 # =========================================================================== B + C. hồ sơ khách
 with tab_cust:
@@ -160,6 +168,12 @@ with tab_cust:
     note("SHAP cho biết vì sao μ̂₀ (khả năng khách tự mua lại) cao hay thấp. Tác động của voucher (τ̂) đến từ mô hình "
          "nhân quả riêng và được phân rã ở biểu đồ phía trên.")
 
+    plain(
+        "Chọn một khách để xem hệ thống đã suy nghĩ thế nào: nếu gửi ưu đãi thì khả năng mua lại tăng thêm bao nhiêu, lợi nhuận "
+        "kỳ vọng sau khi trừ chi phí là bao nhiêu. Quyết định cuối cùng có thể khác với lựa chọn có lợi nhuận cao nhất, ví dụ vì "
+        "ngân sách hoặc số cuộc gọi đã hết, vì khách thuộc nhóm đối chứng, hoặc vì nhân viên duyệt đã từ chối."
+)
+
 # =========================================================================== D. audit log
 with tab_log:
     src2 = st.radio("Nguồn nhật ký", list(SRC), format_func=SRC.get, horizontal=True, key="lg_src")
@@ -186,3 +200,7 @@ with tab_log:
                f"{'có' if view['Khóa chống lặp'].is_unique else 'KHÔNG'}")
     st.dataframe(view, hide_index=True, width="stretch", height=460)
     csv_button(view, f"decision_audit_log_{src2}.csv", key="dl_log")
+    plain(
+        "Nhật ký này ghi lại từng quyết định cùng lý do để sau này có thể kiểm tra lại: khách nào được chọn hành động gì, "
+        "vì sao, và quyết định có qua bước duyệt của con người hay không."
+)

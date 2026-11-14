@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from components import charts as C
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.kpi_cards import banner, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
 from services import model_service as MS
@@ -63,6 +63,12 @@ if mode and mode.startswith("Hillstrom"):
                           xaxis_title="giá trị trung bình mỗi khách")
         C.show(fig, 380)
         explain("Với trần gửi 30 %, MILP trùng Greedy (chỉ một ràng buộc đếm) và không hơn gửi ngẫu nhiên 30 % có ý nghĩa.")
+    plain(
+        "Hillstrom là một thử nghiệm ngẫu nhiên thật trên 64 000 khách, được dùng để kiểm tra phương pháp trên dữ liệu thật "
+        "bên ngoài dự án. Vì khách được chia ngẫu nhiên nên có thể tin vào kết quả về tác dụng trung bình của email. "
+        "Tuy nhiên dữ liệu không cho biết ưu đãi có tác dụng với từng người cụ thể hay không."
+)
+
     st.stop()
 
 # =========================================================================================== bán tổng hợp
@@ -118,6 +124,12 @@ with tb:
         st.dataframe(met, hide_index=True, width="stretch")
         csv_button(met, "s2_metrics_valid.csv", key="dl_met")
 
+    plain(
+        "Mô hình này dự báo khả năng mỗi khách sẽ mua lại trong 30 ngày tới. Nó phân biệt khá tốt giữa khách sẽ mua và không mua "
+        "(AUC khoảng 0,79). Sau khi hiệu chỉnh, xác suất dự báo cũng khớp với tỷ lệ mua thực tế (độ lệch ECE càng gần 0 càng tốt). "
+        "Đây là nền tảng để tính xem gửi ưu đãi có lợi hay không."
+)
+
 with tx:
     sh = D.table("s3_shap_importance").sort_values("mean_abs_shap_logodds", ascending=False).head(15)
     pf = D.table("s3_pfi_group")
@@ -140,6 +152,11 @@ with tx:
         explain("PFI hoán vị <b>trong</b> tập valid nên đo thông tin về thứ hạng: nhóm RFM gần như chiếm toàn bộ. "
                 "Lịch ≈ 0 vì gần như không đổi trong 4 kỳ valid – khác SHAP, nhưng không mâu thuẫn.")
         note("SHAP và PFI giải thích mô hình <b>dự báo</b> μ̂₀, không phải quan hệ nhân quả của voucher.")
+
+    plain(
+        "Phần này cho biết yếu tố nào khiến dự báo mua lại của từng khách tăng hoặc giảm. Nó giải thích cách mô hình dự báo, "
+        "không phải bằng chứng rằng ưu đãi có tác dụng."
+)
 
 with tc:
     ate = D.table("s4_ate_vs_truth")
@@ -169,6 +186,11 @@ with tc:
                ["code", "num", "num", "num"])
     note("Spearman chỉ dùng để đánh giá (cần đáp án); learner được chọn bằng Qini trên nhánh ngẫu nhiên của valid.")
     csv_button(d, f"ate_{tap}_{kq}.csv", key="dl_ate")
+
+    plain(
+        "Câu hỏi ở đây là: gửi ưu đãi thì khả năng mua tăng thêm trung bình bao nhiêu? Vì dữ liệu bán tổng hợp có sẵn đáp án thật "
+        "nên có thể kiểm tra phương pháp ước lượng có đúng không. Nếu khoảng tin cậy chứa số 0 thì chưa thể chắc ưu đãi thật sự có tác dụng."
+)
 
 with tu:
     q = D.table("s4_qini")
@@ -210,3 +232,7 @@ with tu:
     csv_button(d, f"qini_{act}.csv", key="dl_qini")
     with st.expander("Ảnh đường Qini gốc (pipeline offline)"):
         st.image(str(D.FIGS / "fig_s4_qini_curves.png"), width="stretch")
+    plain(
+        "Đường Qini cho biết hệ thống có xếp đúng những khách \"đáng gửi ưu đãi\" lên trước hay không. Đường nằm trên đường chéo ngẫu nhiên "
+        "là dấu hiệu tốt. Do số khách trong tập kiểm tra không nhiều nên khoảng tin cậy còn rộng, vì vậy chưa nên kết luận quá chắc."
+)

@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from components import charts as C
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.gate_status import POP, gate_rows
 from components.kpi_cards import banner, gbp, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
@@ -95,3 +95,12 @@ with right:
     fig.update_layout(barmode="group", yaxis_title="£ (3 kỳ)", yaxis=dict(range=[0, d.chinh_sach.max() * 1.22]))
     C.show(fig, 340)
     explain("Không phân khúc nào kém luật cũ quá 5 %: UK +18,8 %, non-UK +4,7 %.")
+
+plain(
+        "Hệ thống này gợi ý nên gửi ưu đãi cho khách nào để giữ họ ở lại, trong giới hạn ngân sách và số cuộc gọi. "
+        "Khi thử trên dữ liệu chưa từng dùng lúc xây mô hình, hệ thống đạt 7 trên 8 tiêu chí kiểm tra. Tiêu chí chưa đạt "
+        "là so sánh với mức tốt nhất có thể đạt được nếu biết trước đáp án: hệ thống mới đạt được một phần nhỏ so với mức đó. "
+        "Ngoài ra, khoản lợi nhuận tăng thêm so với cách làm cũ vẫn có thể chỉ là do may rủi, vì khoảng tin cậy của nó chứa cả số 0. "
+        "Vì vậy kết luận thận trọng là <b>chưa nên triển khai cho toàn bộ khách hàng</b>, mà nên chạy thử trên một nhóm nhỏ "
+        "có nhóm đối chứng để có bằng chứng chắc chắn hơn."
+)

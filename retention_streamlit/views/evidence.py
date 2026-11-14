@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-from components.explanations import csv_button, explain, note
+from components.explanations import csv_button, explain, note, plain
 from components.kpi_cards import badge, gbp, html_table, kpi_card, kpi_row, page_header, vn
 from services import data_service as D
 from services import hash_service as H
@@ -41,6 +41,11 @@ with t1:
         + "</div>", unsafe_allow_html=True)
     explain("Mỗi giai đoạn là một module <code>src/sX_*.py</code> độc lập, đọc tham số từ <code>configs/config.yaml</code> và ghi "
             "manifest SHA-256 cho mọi đầu ra. App này đọc đầu ra đó; riêng MILP được chạy lại bằng chính mã nguồn gốc.")
+
+    plain(
+        "Toàn bộ hệ thống đi qua 8 giai đoạn, từ chuẩn bị dữ liệu, dự báo, tìm tác động của ưu đãi, tối ưu phân bổ cho đến giám sát. "
+        "Mỗi giai đoạn là một chương trình Python chạy độc lập và ghi lại kết quả để người khác kiểm tra."
+)
 
 with t2:
     st.markdown("##### Nguồn dữ liệu")
@@ -131,3 +136,8 @@ with t4:
     st.info("Hash chỉ xác nhận **tính toàn vẹn** của file (không bị sửa sau khi đóng băng). Nó **không** chứng minh nguồn gốc "
             "dữ liệu, cũng không tự chứng minh việc đăng ký trước – bằng chứng đăng ký trước là thời điểm sửa file và hash đóng "
             "băng, không có lịch sử git sớm (xem mục công khai trong tài liệu kỹ thuật).", icon=":material/info:")
+    plain(
+        "Mã băm giống như dấu vân tay của một file: nếu ai sửa dù chỉ một ký tự thì dấu vân tay đổi. Trang này tự tính lại dấu vân tay "
+        "của từng file và so với bản đã đóng băng. Hiện MATCH nghĩa là file chưa bị sửa. Tuy nhiên điều này chỉ chứng minh file nguyên vẹn, "
+        "không chứng minh ai đã làm ra nó hay làm vào lúc nào."
+)

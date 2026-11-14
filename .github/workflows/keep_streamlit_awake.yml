@@ -1,0 +1,50 @@
+# Giữ app Streamlit Community Cloud luôn thức (app ngủ sau 12 giờ không có lượt truy cập).
+# Cứ 6 giờ, một trình duyệt headless mở app; nếu app đang ngủ thì bấm nút đánh thức.
+# Cần secret STREAMLIT_APP_URL (Settings → Secrets and variables → Actions).
+name: keep-streamlit-awake
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cài Playwright
+        run: |
+          pip install playwright==1.49.1
+          python -m playwright install --with-deps chromium
+      - name: Mở app và đánh thức nếu cần
+        env:
+          APP_URL: ${{ secrets.STREAMLIT_APP_URL }}
+        run: |
+          python - <<'PY'
+          import os, sys, time
+          from playwright.sync_api import sync_playwright
+          url = os.environ.get("APP_URL", "").strip()
+          if not url:
+              sys.exit("Chưa đặt secret STREAMLIT_APP_URL")
+          with sync_playwright() as p:
+              b = p.chromium.launch()
+              pg = b.new_page()
+              pg.goto(url, wait_until="domcontentloaded", timeout=90_000)
+              time.sleep(8)
+              btn = pg.get_by_role("button", name="Yes, get this app back up!")
+              if btn.count() > 0:
+                  print("App đang ngủ → bấm đánh thức")
+                  btn.first.click()
+                  time.sleep(60)
+              else:
+                  print("App đang chạy")
+              print("Tiêu đề trang:", pg.title())
+              b.close()
+          PY

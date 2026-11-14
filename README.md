@@ -102,3 +102,17 @@ Chi tiết: `outputs/manifests/audit_2026-11-13.md`; ghi chú tương ứng tron
 - Chạy lại GĐ1 sẽ tạo `data/processed/raw_combined.parquet`, nằm trong phạm vi băm dữ liệu ⇒ `verify_freeze` báo "file mới" dù nội dung không đổi. Hai hình `fig_s1_split_timeline.png`, `fig_s1_base_rate_by_t0.png` ghi sau `s1_manifest.json` nên SHA trong manifest đó không còn khớp.
 - `CLAUDE.md` §2 còn ghi "tiếp theo: `--open-locked`" (lỗi thời, không sửa được vì nằm trong phạm vi băm). Trạng thái thật: locked đã mở lúc 2026-11-12 21:40:19 (+07), xem `outputs/manifests/s8_locked_opened.lock`.
 - `Scorer` đọc hệ số smearing và q conformal từ `outputs/manifests/s2_manifest.json`, và G1 đọc `s1_embargo_check.csv`: hai đầu vào này nằm ngoài phạm vi băm (đã đối chiếu khớp với `pred_s2.parquet`).
+
+## Dashboard tương tác (Streamlit)
+
+**Retention Decision System – CRM Intelligence & Prescriptive Analytics** – 6 trang: Tổng quan điều hành (quyết định phát hành, 7 nhóm cổng / 8 tiêu chí), Mô phỏng ra quyết định (chạy lại MILP thật bằng HiGHS trên dữ liệu valid + calib), Customer 360 & Router (Sankey 7 bước, hồ sơ quyết định từng khách, nhật ký kiểm toán), Dự báo & nhân quả, Giám sát MLOps, Minh chứng & tái lập (kiểm tra SHA-256 trực tiếp).
+
+- App trực tuyến: _(dán link sau khi triển khai)_
+- Chạy cục bộ (Python 3.12):
+
+```bash
+pip install -r retention_streamlit/requirements.txt
+streamlit run retention_streamlit/streamlit_app.py
+```
+
+Dashboard không huấn luyện lại mô hình: nó đọc kết quả đã đóng băng trong `data/processed/` và `outputs/`, còn MILP, Greedy và luật cũ được gọi từ chính mã nguồn `src/s5_spo.py`, `src/s6_milp.py`, `src/s5b_dr_diagnostics.py` (trích hàm qua AST, không sửa file gốc). Trang Mô phỏng chỉ dùng valid + calib; Locked Test và Out-of-Time không bị thay đổi. Workflow `.github/workflows/keep_streamlit_awake.yml` mở app mỗi 6 giờ để app không ngủ.

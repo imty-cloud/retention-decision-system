@@ -1,0 +1,11 @@
+# Môi trường chạy dashboard trên Streamlit Community Cloud (Python 3.12).
+# Chỉ gồm thư viện dashboard cần; không cài LightGBM/EconML/DoubleML vì app đọc kết quả đã đóng băng
+# và chạy lại MILP bằng chính mã nguồn trong src/ (trích qua AST, solver HiGHS).
+streamlit==1.67.0
+plotly==7.1.0
+pandas==3.0.5
+numpy==2.5.3
+pyarrow==26.0.1
+scipy==1.18.1
+highspy==1.16.0
+PyYAML==6.0.3

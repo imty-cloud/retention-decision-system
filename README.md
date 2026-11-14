@@ -1,6 +1,6 @@
-# PTDLNC – Hệ thống ra quyết định giữ chân khách hàng đa kênh (Online Retail II)
+HỆ THỐNG RA QUYẾT ĐỊNH GIỮ CHÂN KHÁCH HÀNG ĐA KÊNH 
 
-Tiểu luận cuối kỳ *Phân tích dữ liệu nâng cao*. Đặc tả đầy đủ, luật cứng và kế hoạch từng giai đoạn: **xem [`CLAUDE.md`](CLAUDE.md)**.
+Đặc tả đầy đủ, luật cứng và kế hoạch từng giai đoạn: **xem [`CLAUDE.md`](CLAUDE.md)**.
 
 Chu trình 8 giai đoạn: thiết kế bài toán và dữ liệu (chống rò rỉ) → dự báo + hiệu chỉnh xác suất → giải thích → nhân quả (ATE/CATE/uplift) →
 Predict-Then-Optimize và SPO+ → MILP → Action Router (guardrail, HITL) → triển khai, đo lường thực chứng, giám sát MLOps. Kèm kiểm định ngoài trên RCT thật (Hillstrom, `s9`).

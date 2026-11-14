@@ -1,5 +1,4 @@
-**HỆ THỐNG RA QUYẾT ĐỊNH GIỮ CHÂN KHÁCH HÀNG ĐA KÊNH **
-
+# HỆ THỐNG RA QUYẾT ĐỊNH GIỮ CHÂN KHÁCH HÀNG ĐA KÊNH
 Đặc tả đầy đủ, luật cứng và kế hoạch từng giai đoạn: **xem [`CLAUDE.md`](CLAUDE.md)**.
 
 Chu trình 8 giai đoạn: thiết kế bài toán và dữ liệu (chống rò rỉ) → dự báo + hiệu chỉnh xác suất → giải thích → nhân quả (ATE/CATE/uplift) →

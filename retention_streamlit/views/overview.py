@@ -23,7 +23,7 @@ official = gates[(gates.quan_the == "toan_bo") & gates.cham_chinh_thuc.astype(bo
 n_pass, n_all = int(official.dat.sum()), len(official)
 lo, hi = D.AUDIT_G4A_CI
 
-banner("fail", "Quyết định phát hành · Release decision", "NO-GO – FULL ROLLOUT",
+banner("fail", "Quyết định phát hành", "NO-GO – FULL ROLLOUT",
        [f"<b>{n_pass}/{n_all} tiêu chí đạt</b> trên 7 nhóm cổng (G4 gồm hai tiêu chí G4a và G4b).",
         "<b>Nguyên nhân trực tiếp:</b> G4b trượt – regret chuẩn hóa 0,894 &gt; ngưỡng 0,35. Ngưỡng này không thể đạt: "
         "ngay chính sách biết kỳ vọng thật cũng có regret 0,742.",

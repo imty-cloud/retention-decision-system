@@ -177,7 +177,7 @@ with tab_log:
     view = d[["decision_id", "customer_id", "t0", "model_version", "policy_version", "proposed_action", "final_action",
               "hitl_flag", "hitl_trigger", "hitl_outcome", "control_group", "router_reason_code", "reason_1", "reason_2",
               "reason_3", "decided_at", "idempotency_key"]].rename(columns={
-        "decision_id": "Decision ID", "customer_id": "Customer ID", "model_version": "Model version",
+        "decision_id": "Mã quyết định", "customer_id": "Customer ID", "model_version": "Model version",
         "policy_version": "Policy version", "proposed_action": "Đề xuất", "final_action": "Cuối cùng",
         "hitl_flag": "HITL", "hitl_trigger": "Lý do HITL", "hitl_outcome": "Kết quả HITL", "control_group": "Đối chứng",
         "router_reason_code": "Mã Router", "reason_1": "Mã lý do 1", "reason_2": "Mã lý do 2", "reason_3": "Mã lý do 3",

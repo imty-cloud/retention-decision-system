@@ -8,7 +8,7 @@
   --milp: #2563EB; --chal: #7C3AED; --base: #8A94A6;
   --pass: #15803D; --pass-bg: #E8F5EC; --warn: #B45309; --warn-bg: #FEF3E2; --fail: #B42318; --fail-bg: #FDECEA;
 }
-.block-container { padding-top: 2.2rem; padding-bottom: 3rem; max-width: 1320px; }
+.block-container { padding-top: 4.4rem; padding-bottom: 3rem; max-width: 1320px; }
 h1, h2, h3 { letter-spacing: -0.01em; }
 
 /* ---------- sidebar navy ---------- */
@@ -136,3 +136,8 @@ table.rds-table td.crit { min-width: 170px; }
 [data-testid="stSidebarUserContent"] p, [data-testid="stSidebarUserContent"] [data-testid="stCaptionContainer"] {
   font-size: 0.86rem !important; font-weight: 500; color: #C5D3E6 !important; line-height: 1.5; }
 [data-testid="stSidebarUserContent"] b, [data-testid="stSidebarUserContent"] strong { color: #FFFFFF !important; font-weight: 700; }
+
+/* Tiêu đề in hoa tiếng Việt: chừa chỗ cho dấu chồng (Ố, Ề…) và không bị thanh công cụ của Streamlit Cloud che */
+[data-testid="stHeader"] { background: transparent; }
+.rds-title { line-height: 1.38 !important; padding-top: 0.12em; overflow: visible; }
+[data-testid="stMarkdownContainer"]:has(.rds-title) { overflow: visible; }

@@ -225,7 +225,7 @@ with res:
              "Xem phân rã kinh tế từng hành động ở trang Customer 360.")
 
     B_, K_, m_, a2_ = R["ins"]["B"], R["ins"]["K"], ss.sim_params[5], ss.sim_params[6]
-    report = f"""# Scenario Report – Retention Decision System
+    report = f"""# Báo cáo kịch bản – Retention Decision System
 Thời điểm xuất: {dt.datetime.now().strftime('%d/%m/%Y %H:%M')}
 Phiên bản chính sách: {D.POLICY_VERSION} · {VERS[ss.sim_params[2]]}
 Kỳ: {R['period']} · Quần thể: {ss.sim_params[1]} · {R['n']} khách
@@ -243,5 +243,5 @@ Giá bóng (LP relaxation): ngân sách £{R['duals']['pi_B']:.3f}/£1 mệnh gi
 
 > Sandbox valid + calib. Kết quả mô phỏng không phải bằng chứng kiểm định độc lập; lợi nhuận "thật" lấy từ đáp án bán tổng hợp.
 """
-    st.download_button("Xuất Scenario Report", report.encode("utf-8"), file_name="scenario_report.md",
+    st.download_button("Xuất báo cáo kịch bản", report.encode("utf-8"), file_name="scenario_report.md",
                        mime="text/markdown", icon=":material/description:")

@@ -35,7 +35,7 @@ with t1:
              ("STAGE 5", "PTO vs SPO+", "Regret, quan hệ MSE ↔ regret"),
              ("STAGE 6", "MILP toàn quy mô", "HiGHS, giá bóng, độ nhạy, quy mô"),
              ("STAGE 7", "Action Router", "Guardrail, HITL, đối chứng 10 %, nhật ký"),
-             ("STAGE 8", "Release Gates & MLOps", "Đóng băng, Locked 1 lần, OOT, playbook")]
+             ("STAGE 8", "Cổng phát hành & MLOps", "Đóng băng, Locked 1 lần, OOT, playbook")]
     st.markdown('<div class="rds-flow">' + "".join(
         f'<div class="rds-step"><div class="n">{n}</div><div class="t">{t}</div><div class="d">{d}</div></div>' for n, t, d in steps)
         + "</div>", unsafe_allow_html=True)

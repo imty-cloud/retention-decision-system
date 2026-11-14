@@ -1,4 +1,4 @@
-HỆ THỐNG RA QUYẾT ĐỊNH GIỮ CHÂN KHÁCH HÀNG ĐA KÊNH 
+**HỆ THỐNG RA QUYẾT ĐỊNH GIỮ CHÂN KHÁCH HÀNG ĐA KÊNH **
 
 Đặc tả đầy đủ, luật cứng và kế hoạch từng giai đoạn: **xem [`CLAUDE.md`](CLAUDE.md)**.
 

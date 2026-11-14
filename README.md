@@ -31,7 +31,7 @@ outputs/manifests/             SHA-256, phiên bản thư viện, handoff, khóa
 ## Tái lập
 
 Môi trường kiểm chứng: **GĐ1 và GĐ1b chạy trên Linux x86_64, Python 3.13.18** (pandas 3.0.5, numpy 2.5.3); **các GĐ còn lại (GĐ2–GĐ8, s9) chạy trên macOS Apple Silicon (arm64), Python 3.14.7**.
-Dựng lại GĐ1 + GĐ1b trên macOS (3.14.7) cho nội dung `transactions_clean`, `snapshots`, `logged`, `oracle` trùng 100 % với parquet đã đóng băng (kiểm toán 13/11). `requirements.txt` khuyến nghị Python 3.11 nhưng **chưa kiểm trên 3.11**.
+Dựng lại GĐ1 + GĐ1b trên macOS (3.14.7) cho nội dung `transactions_clean`, `snapshots`, `logged`, `oracle` trùng 100 % với parquet đã đóng băng (kiểm toán 13/11). `requirements.txt` khuyến nghị Python 3.11 nhưng 
 `outputs/manifests/requirements_lock.txt` là `pip freeze` của môi trường 3.14.7 (nên trên Python khác có thể không cài được bản ghim);
 ma trận tương thích: `outputs/tables/s8_compat_matrix.csv`.
 
@@ -107,7 +107,7 @@ Chi tiết: `outputs/manifests/audit_2026-11-13.md`; ghi chú tương ứng tron
 
 **Retention Decision System – CRM Intelligence & Prescriptive Analytics** – 6 trang: Tổng quan điều hành (quyết định phát hành, 7 nhóm cổng / 8 tiêu chí), Mô phỏng ra quyết định (chạy lại MILP thật bằng HiGHS trên dữ liệu valid + calib), Customer 360 & Router (Sankey 7 bước, hồ sơ quyết định từng khách, nhật ký kiểm toán), Dự báo & nhân quả, Giám sát MLOps, Minh chứng & tái lập (kiểm tra SHA-256 trực tiếp).
 
-- App trực tuyến: _(dán link sau khi triển khai)_
+- App trực tuyến: https://retention-decision-system.streamlit.app/
 - Chạy cục bộ (Python 3.12):
 
 ```bash
